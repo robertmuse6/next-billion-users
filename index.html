@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Tools for the Next Billion Users - The Evidence Playbook</title>
-<meta name="description" content="18 sources - Haqdarshak reports, Project Rani UX research, and Google NBU talks - distilled into 26 evidence-backed moves for building tools for the next billion users: design, distribution, trust, and tech constraints.">
+<meta name="description" content="18 sources - Haqdarshak reports, Project Rani UX research, and Google NBU talks - distilled into 39 evidence-backed moves for building tools for the next billion users: design, distribution, trust, and tech constraints.">
 <style>
 :root{
   --bg:#0b0d10; --card:#14181d; --card2:#1a1f26; --ink:#e8eaed; --dim:#9aa3ad;
   --accent:#ffb020; --line:#242b33; --chip:#222932;
-  --s1:#7dd3fc; --s2:#c4b5fd; --s3:#86efac; --s4:#fca5a5; --s5:#fcd34d;
+  --s1:#7dd3fc; --s2:#c4b5fd; --s3:#86efac; --s4:#fca5a5; --s5:#fcd34d;--s6:#f0abfc;
 }
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
 html{scroll-behavior:smooth}
@@ -99,13 +99,14 @@ footer{padding:30px 0 60px;color:var(--dim);font-size:12.5px;text-align:center}
     <section class="hero">
       <div class="kicker">Next Billion Users - 18 sources - one playbook</div>
       <h1>Access is solved. Agency is not. Build for that.</h1>
-      <p>26 evidence-backed moves, from the big picture to the real-world constraints: what every source agrees on, how the product should teach, how it should reach people, how it earns trust, and what the real world imposes. Built from Haqdarshak's reports, Google's Project Rani research, and Naman's Systems of Ascent agenda. Scroll the storyline. Tap any card for the full idea and why it forces the next one.</p>
+      <p>39 evidence-backed moves, from the big picture to the real-world constraints: what every source agrees on, how the product should teach, how it should reach people, how it earns trust, and what the real world imposes. Built from Haqdarshak's reports, Google's Project Rani research, and Naman's Systems of Ascent agenda. Scroll the storyline. Tap any card for the full idea and why it forces the next one.</p>
       <div class="legend">
         <span style="border-color:var(--s1);color:var(--s1)">I. The big picture</span>
         <span style="border-color:var(--s2);color:var(--s2)">II. Design principles</span>
         <span style="border-color:var(--s3);color:var(--s3)">III. Distribution</span>
         <span style="border-color:var(--s4);color:var(--s4)">IV. Trust mechanics</span>
         <span style="border-color:var(--s5);color:var(--s5)">V. Tech constraints</span>
+        <span style="border-color:var(--s6);color:var(--s6)">VI. What shifts behaviour</span>
       </div>
     </section>
     <div id="feed"></div>
@@ -198,7 +199,7 @@ footer{padding:30px 0 60px;color:var(--dim);font-size:12.5px;text-align:center}
 <li>Digital and financial literacy training is a universal requirement across all cohorts and genders [HQ Social Protection Landscape].</li>
 </ul>
 
-<h1>Part 6 - Mapping the evidence onto your Systems of Ascent frame</h1>
+<h1>Part 7 - Mapping the evidence onto your Systems of Ascent frame</h1>
 <ul>
 <li><b>Value Stagnation is real and measured:</b> 60% no scheme enrollment, 86% no government loan scheme, savings under 20% of income for most women entrepreneurs [HQ Social Protection Landscape; HQ Women &amp; Finance].</li>
 <li><b>The Transition Point has a recognizable shape:</b> it looks like the Curious Tinkerer hitting the limit of basics and asking for payments, shopping, banking - the moment self-directed demand appears [Rani TT]. Interview for that moment.</li>
@@ -206,7 +207,50 @@ footer{padding:30px 0 60px;color:var(--dim);font-size:12.5px;text-align:center}
 <li><b>Micro-Meso-Macro all appear in the sources:</b> Micro = learn my phone, my documents, my loan. Meso = SHG, village committee, the agent network. Macro = the rails themselves - Yojana Card, digital public goods, scheme delivery infrastructure [HQ Annual 2023].</li>
 </ul>
 
-<h1>Part 7 - Source ledger</h1>
+<h1><h1>Part 6 - What shifts behaviour: the lever layer</h1>
+<p>Everything before this part tells you what is true about the next billion users. This part answers the harder question you asked: what actually gets a person to take more agency in their own life - to move from consuming to compounding - and how would you know on the ground that it is working. Ten levers, ranked by strength of evidence, each written as a decision rule. Then a framework to hold them together, and the field tests that confirm or kill each one.</p>
+<h2>The anecdote that frames it: you get the behaviour you measure</h2>
+<p>Your Instagram find, verbatim (hyperfocus.hq reel, September 1, 2026):</p>
+<p>"Colonial Delhi had too many cobras. So the British offered a bounty for every dead cobra brought in. It worked. Then people started breeding cobras. The government canceled the scheme. The breeders released their worthless snakes. Delhi ended with more cobras than before it started. Economists call this the cobra effect. The rule is, you don't get the behavior you want, you get the behavior you measure. Measure calls answered and you'll get short calls. Measure lines of code and you'll get long code. Measure arrests and you'll get arrests... If a hospital is ranked on survival rates, it turns away the sickest patients. Not because the surgeons are bad, because that's what the number rewards. Most people go their whole life without knowing why the rules around them are so strange. Not because they're not smart, because nobody ever hands them the idea."</p>
+<p>Why this hooked you, and why it belongs here: it is your Value Stagnation thesis compressed into twenty seconds. Systems produce the behaviour they measure and reward, not the behaviour they intend. Welfare schemes measure enrollment, so everyone optimizes enrollment - and 76% of eligible workers stay unenrolled while the targets get hit. And the closing line is the distribution insight: nobody ever hands them the idea. Agency begins when someone is handed the idea that they are allowed. Every lever below is a way of handing it to them.</p>
+<h2>The top 10 levers, ranked</h2>
+<h2>1. Stage small wins they complete themselves - nothing builds agency like a finished action</h2>
+<p>If a user must come to believe "I can do this," then do not tell them - engineer a two-minute success they finish with their own hands, today. Bandura (1977) ranks mastery experiences as the strongest source of self-efficacy, above persuasion and above watching others. Your Rani research shows the failure mode: when the tech teacher does it FOR the novice, confidence never forms. This is the first rung of agency: felt permission comes from "I did it once," not from "someone explained it."</p>
+<h2>2. Turn every intention into an if-then plan before the user leaves</h2>
+<p>If a user says "I will save" or "I will apply," then do not end the session on the intention - have them state when, where and how: "After the 10th, when the remittance arrives, I open the app and move 200 rupees." Gollwitzer and Sheeran (2006), a meta-analysis of 94 tests, found these implementation intentions produce a medium-to-large jump in follow-through (d = 0.65). The plan moves the decision from future willpower to a trigger the environment fires.</p>
+<h2>3. Make doing nothing the growth move - set the default to the ladder</h2>
+<p>If the user does nothing at all, then that nothing should still move them up one rung: auto-enrolled, auto-saved, opted in, free to leave. Defaults are among the strongest known levers in behavioural science (Thaler and Sunstein, Nudge; organ-donor consent rates go from single digits to near-universal when consent is the default). Inertia is the dominant behaviour in your population - stop fighting it and aim it.</p>
+<h2>4. Prove that people like them already do it - and social proof must be literal</h2>
+<p>If a user wonders "is this for people like me," then show a person from their district, their income band, their life doing it - a video, not a statistic. Cialdini's descriptive norms; the Behavioural Insights Team raised tax repayment simply by telling late payers, truthfully, that nine out of ten people pay on time (Hallsworth et al., 2017, over 200,000 taxpayers, zero cost). Bandura's second source of self-efficacy is vicarious experience: watching someone like yourself succeed. "People like them" is not a metaphor here - it is the mechanism.</p>
+<h2>5. Shrink the first step until refusing it feels silly</h2>
+<p>If motivation is low or trust is thin, then do not raise motivation - cut the ability cost: one tap, one screen, one number, one minute. Fogg's Behavior Model: behaviour happens only when motivation, ability and a prompt converge in the same moment, and at the moment of action ability beats motivation. Haqdarshak's camp model is this lever made physical: the first step at a camp is walking up to a table, not completing a form.</p>
+<h2>6. Pay the present self today, not the future self someday</h2>
+<p>If the payoff is distant and the user lives in the present, then attach a small, immediate, concrete reward to the action itself. The cleanest evidence is from rural Rajasthan (Banerjee, Duflo, Glennerster and Kothari, BMJ 2010): making immunization camps reliable lifted full immunization from 6% to 17%; adding a kilogram of lentils per visit lifted it to 39%. A kilo of dal beat a lifetime of disease protection because it lands today. Design the immediate win first - the long-term benefit is the justification, not the motivator.</p>
+<h2>7. Let users tie their own hands - commitment devices for the future self</h2>
+<p>If a user wants to save, learn or apply but fears their own future weakness, then offer the lock voluntarily: money they cannot touch until a date, a goal declared to their SHG, a class pre-booked. Ashraf, Karlan and Yin (2006, SEED, Philippines): offered a savings account that restricts withdrawals, 28% took it up, and their balances grew significantly relative to both control groups. About one in four users knows their future self is unreliable and will take the rope.</p>
+<h2>8. Launch at fresh starts - timing is a lever, not a detail</h2>
+<p>If you want a new habit installed or a lapsed user back, then approach at a temporal landmark: the first of the month (salary day), Monday, Diwali, harvest season, a birthday, a new phone. Dai, Milkman and Riis (2014, Management Science) show aspirational behaviour spikes at landmarks because people feel like a new self, and the old self's failures belong to the past. Build your interview calendar and your re-engagement pushes around these dates.</p>
+<h2>9. Hand them an identity, not a task</h2>
+<p>If a user resists an action, then stop selling the action and name who they become: not "save money" but "you are someone who saves"; not "fill this form" but "you are an entrepreneur now." Bryan, Walton, Rogers and Dweck (2011) showed identity framing ("be a voter") outperforms task framing ("vote"). Rani's profiles show the wall is already identity-shaped - "I am not a phone person" - so the key must be identity-shaped too. Identity survives a failed attempt; compliance does not.</p>
+<h2>10. Use loss framing last, and only after trust exists</h2>
+<p>If - and only if - the user already trusts you, then show what waiting costs them. Losses loom larger than gains (Kahneman and Tversky, 1979), which makes loss framing powerful and dangerous: in a population where fraud fear blocks even advanced users from payments, a loss-framed message reads as a threat and trips the fraud alarm. Ranked last not because it is weak but because it is the only lever that can destroy the trust the other nine build.</p>
+<h2>The working framework: the Agency Ladder</h2>
+<p>Five rungs. Every stall is a dropped rung. When someone is stuck, diagnose the rung - never push harder on the wrong one.</p>
+<p>Rung 1 - SEE IT: someone like me has done this. (Levers 4, 9.) Interview probe: "Do you know anyone who has done this?" A no means start here.</p>
+<p>Rung 2 - FEEL ALLOWED: this is for people like me. (Levers 9 and 4.) Probe: "Who do you think this scheme, this app, is for?" A wrong answer here means nothing below this rung matters yet.</p>
+<p>Rung 3 - DO IT SMALL: a two-minute win, today, finished by their own hand. (Levers 1, 5, 6.) Probe: watch them attempt one real task on their own phone, unassisted. Every hesitation point is a felt-permission wall you can now design against.</p>
+<p>Rung 4 - MAKE IT STICK: if-then plan, default, commitment lock. (Levers 2, 3, 7.) Probe: end every interview by offering one lock-in ("Shall we set it for the 10th?"). Take-up is your ground-truth demand curve.</p>
+<p>Rung 5 - COME BACK HIGHER: fresh-start timing, the next step sized to their new confidence, loss framing only once trust exists. (Levers 8, 10.)</p>
+<h2>Test it on the ground: what to run in the Transition Point interviews</h2>
+<p>Five tests. Each confirms or kills a lever for your population.</p>
+<p>- The past-attempt autopsy: ask "tell me about the last time you actually tried" - to save, apply, learn, invest. If the story is a failed big first step, levers 5 and 1 are the binding constraint. If it is started-and-stopped, levers 2 and 8 are.</p>
+<p>- The live attempt: no prototype, no help - watch them do one real task on their own phone. Where they hesitate is the exact boundary of what they believe they are permitted to do.</p>
+<p>- The "who is this for" question: ask it about UPI, about a welfare scheme, about your idea. The pattern of answers is the identity map of their permission structure.</p>
+<p>- The commitment offer: offer a real lock-in ("want me to remind you on salary day, and you cannot defer it?"). Take-up rate is a falsifiable prediction - SEED says roughly one in four.</p>
+<p>- The cobra check on yourself: write the single metric your pilot will optimize, then ask "how would a clever field agent game this?" If you cannot answer in five minutes, you are about to pay bounties for dead cobras.</p>
+<h2>Sources for this part</h2>
+<p>Bandura (1977), Self-efficacy: toward a unifying theory of behavioral change. Gollwitzer and Sheeran (2006), meta-analysis of 94 tests, d = 0.65. Thaler and Sunstein (2008), Nudge. Hallsworth et al. (2017), Journal of Public Economics - BIT social-norm tax letters. Fogg, BJ - Behavior Model, Stanford Behavior Design Lab. Banerjee, Duflo, Glennerster and Kothari (2010), BMJ - Rajasthan immunization incentives RCT. Ashraf, Karlan and Yin (2006), Quarterly Journal of Economics - SEED commitment savings. Dai, Milkman and Riis (2014), Management Science - fresh start effect. Bryan, Walton, Rogers and Dweck (2011) - identity framing. Kahneman and Tversky (1979) - prospect theory. hyperfocus.hq Instagram reel (September 1, 2026) - cobra effect anecdote. Continuity with Parts 1-5: Rani presentation (tech teacher, profiles, payments fear) and Haqdarshak reports (camps, SHGs, enrollment gap).</p>
+<h1>Part 8 - Source ledger</h1>
 <p><b>Your agenda (read in full):</b> Systems of Ascent MECE map - circle of impact (Micro/Meso/Macro) × will (Inertial/Adaptive/Generative); problem statement "Value Stagnation"; the Transition Point lever; 9 Story Zones; focus on Threshold of Agitation. Source: bmnpeach.notion.site/Agenda-3d77429233ab8011b4f1d5c60021677b</p>
 <p><b>Turian Labs / Project Rani (your OneDrive folder, read in full):</b></p>
 <ul>
@@ -220,10 +264,498 @@ footer{padding:30px 0 60px;color:var(--dim);font-size:12.5px;text-align:center}
   </div>
 </main>
 
-<footer>Distilled from 15 Haqdarshak reports, Google's Project Rani UX research, and 3 Google NBU talks (transcripts pending for the talks). Built for scrolling.</footer>
+<footer>Distilled from 15 Haqdarshak reports, Google's Project Rani UX research, 3 Google NBU talks (transcripts pending), and the behavioural-science canon from Bandura to the BIT. Built for scrolling.</footer>
 <script>
 const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-const CONCEPTS = [{"num": 1, "stage": "Stage I - The big picture: what every source agrees on", "stage_num": 1, "stage_range": "1-8", "eyebrow": "The real gap", "title": "Access is solved; agency is not", "summary": ["99% of rural women entrepreneurs already have bank accounts, and UPI is everywhere (HQ Women & Finance). Yet 76% of informal workers who never enroll in welfare schemes skip them simply because they don't know they exist (HQ Social Protection Landscape). Project Rani's novices own smartphones but treat them as precious objects they're scared of damaging, using only calling and messaging (Project Rani Trusted Tester x Turian Labs). The constraint to design against is not hardware or connectivity - it's the user's belief about what they're allowed to try. Naman's 'Value Stagnation' thesis is confirmed by all three source sets: the tools (UPI, smartphones) are present; the rails for compounding are missing."], "transition": "If the gap is agency rather than access, the next question is who currently supplies that agency - and the answer is not an app."}, {"num": 2, "stage": "Stage I - The big picture: what every source agrees on", "stage_num": 1, "stage_range": "1-8", "eyebrow": "Tech teachers and agents", "title": "The real onboarding layer is a human", "summary": ["Novice users learn from 'tech teachers' - family members they approach when stuck, not when curious (Rani TT). Haqdarshak reached 26 lakh citizens through 26,563 trained local agents who become 'community resource persons,' not mere service providers (HQ Annual 2023). Users judge any product against this human benchmark: instant, face-to-face query resolution was the one thing Rani's videos couldn't match ('in the app all you can do is watch carefully and hope you will figure it out' - P33). Design the human-assist loop - WhatsApp help, a local champion, voice query - as a first-class feature, not a support afterthought."], "transition": "But even the best human teaches the way Rani's users already learn - and it isn't by listening."}, {"num": 3, "stage": "Stage I - The big picture: what every source agrees on", "stage_num": 1, "stage_range": "1-8", "eyebrow": "Visual learning", "title": "Users learn with their eyes, not their ears", "summary": ["Rani participants replicated clicks and memorized the symbols tapped, often without understanding the underlying concept; one participant with weak English 'watched what they were doing rather than listening to what they were saying' (Rani TT). Rewatching is the norm, so unlimited replays matter. The most effective instruction is landmark-based: 'the moon icon on the top right of the screen' beats any abstract label (Rani TT recommendations). Concept-driven narratives - 'this feature works the same way across apps' - transfer learning further than step lists."], "transition": "Visual learning has a hard failure mode: it only transfers if what they saw matches what they see."}, {"num": 4, "stage": "Stage I - The big picture: what every source agrees on", "stage_num": 1, "stage_range": "1-8", "eyebrow": "Fidelity", "title": "Any mismatch with their screen kills the transfer", "summary": ["A single label difference - the tutorial said 'Anuvad Kare' but the real screen said 'Translate' - confused a user mid-task (Rani TT). English UI inside Hindi tutorials made buttons like 'Try now' invisible. Even set design broke belief: an educated-looking home made the learner-in-video feel fake ('she seems educated yet says she does not know how to use an android phone' - P18). The production rule: match the user's actual device, language, home and social reality as closely as possible - and when you can't, say so inside the content itself."], "transition": "Fidelity earns you the attempt. What earns you the next one is something older than any UI: trust."}, {"num": 5, "stage": "Stage I - The big picture: what every source agrees on", "stage_num": 1, "stage_range": "1-8", "eyebrow": "Trust mechanics", "title": "Trust is earned in small, free wins - and fraud fear is rational", "summary": ["This population has been burned: INR 1,500 paid to an agent for a domicile certificate that never came; a private CSC charging INR 300 for a PAN card that officially costs INR 107 (HQ Annual 2023; HQ Citizen Experiences). Haqdarshak agents break the ice by doing something small and free first - an e-Shram card, a document fixed on the spot - then trust follows. Even advanced smartphone users avoid payment apps 'due to fear of frauds' (Rani TT). Sequence every ask: deliver value before requesting data, permissions, or money."], "transition": "And there is one feature where trust matters more than anywhere else - the one they want most."}, {"num": 6, "stage": "Stage I - The big picture: what every source agrees on", "stage_num": 1, "stage_range": "1-8", "eyebrow": "Money features", "title": "Payments are the aspiration and the anxiety in one", "summary": ["Across Rani's four user profiles, digital payments and navigation were the content that triggered the most interest - and the most caution. Participants asked for slower, step-by-step pacing on the GPay tutorial precisely because 'a small mistake can cause loss of money' (P18, Rani TT). Money features are the highest-stakes screens in your product: slow them down, make every step reversible, and show the safety net. The feature that unlocks compounding is also the feature that can destroy trust in one bad moment."], "transition": "Who feels that anxiety, and who feels ready, turns out to have little to do with age or income."}, {"num": 7, "stage": "Stage I - The big picture: what every source agrees on", "stage_num": 1, "stage_range": "1-8", "eyebrow": "The four profiles", "title": "Segment by mindset and exposure, not demographics", "summary": ["Rani's research found behavior clusters that cut across age and income: the Frightful Amateur (device is precious, entertainment only), the Curious Tinkerer (tries everything, wants more), the Stagnant Learner (tries only what seems relevant), and the Advanced Sampler (wants shopping, payments, banking; dismisses basics) (Rani TT). The same person moves between states. These map onto Naman's will-axis: Frightful Amateurs are the Pushed, Tinkerers and Samplers are Makers, and Direction Setters are who Haqdarshak recruits as agents. Build for the transition between states - that is where the 'Threshold of Agitation' lives."], "transition": "Once you see the states, the final insight explains what actually moves someone across one."}, {"num": 8, "stage": "Stage I - The big picture: what every source agrees on", "stage_num": 1, "stage_range": "1-8", "eyebrow": "What compounds", "title": "Durable assets beat one-time benefits", "summary": ["Citizens value identity and compliance documents more than one-time cash benefits, because documents keep paying (HQ Archives, Direct Implementation). Nearly 60% of informal workers are enrolled in no scheme at all; income certificate, e-Shram and caste certificate are the most-missed documents (HQ Social Protection Landscape). For the 'consuming to compounding' lever: the first compoundable asset for this population is often a document, a record, a verified identity - not money. Products that build the asset layer unlock everything after it."], "transition": "Those are the eight load-bearing facts. The rest of the spine turns them into moves, starting with how the product itself should teach."}, {"num": 9, "stage": "Stage II - Design principles: how the product teaches", "stage_num": 2, "stage_range": "9-13", "eyebrow": "Deconstruction", "title": "Teach one deconstructed task at a time", "summary": ["Deconstructed, single-task steps produced the proudest moment in the Rani study: 'I followed exactly as per the video. I did it on my own. I am very proud of myself' (P1). Multi-step, fast-paced flows (the GPay video) caused low retention, drop-off, and avoidance of the app in future. Rule: one task per lesson, visible completion, performed by the user themselves - pride in self-completion is the retention engine (Rani TT)."], "transition": "A single task learned once is still fragile, because of when and how this audience consumes content."}, {"num": 10, "stage": "Stage II - Design principles: how the product teaches", "stage_num": 2, "stage_range": "9-13", "eyebrow": "Rewatching", "title": "Design for rewatching and leisure-time sampling", "summary": ["Content is consumed in free time, skimmed like infotainment, and rarely practiced immediately (Rani TT). So make every unit re-findable - recently-watched, search, per-feature sections - and make rewatching cost nothing. Then re-surface the right guidance inside the real product at the moment of need: Rani's top recommendation was integrating tutorials into the first-time walkthrough of the actual feature, prompted when the user samples something new (Rani TT recommendations)."], "transition": "Re-findable content still fails if the words on screen aren't the user's own."}, {"num": 11, "stage": "Stage II - Design principles: how the product teaches", "stage_num": 2, "stage_range": "9-13", "eyebrow": "Language", "title": "Use their language - and let them switch it", "summary": ["Hindi UI was appreciated, but users still wanted a language-choice option; English terms inside Hindi flows silently failed ('Try now' was never clicked because it wasn't understood) (Rani TT). Default to vernacular, always offer the switch, and never mix languages inside a single instruction. Captions and on-screen text in the same language as the narration were explicitly requested."], "transition": "Even a perfectly localized product dies quietly if it stops being new."}, {"num": 12, "stage": "Stage II - Design principles: how the product teaches", "stage_num": 2, "stage_range": "9-13", "eyebrow": "Fresh content", "title": "Fresh content on the apps they already love is the retention loop", "summary": ["Users sampled Rani's tutorials quickly, then lapsed to YouTube's wider range; their demand was for regularly updated content on third-party apps - WhatsApp, Instagram, Sharechat - the things their social circles use (Rani TT). A standalone learning app loses to an app with broader offerings; either integrate into something they already open daily, or keep feeding new, socially-relevant content. A small gamification nudge like 'Feature of the Day' pushes users out of their comfort zone (Rani TT recommendations)."], "transition": "Content keeps them; believability converts them. And believability has a look."}, {"num": 13, "stage": "Stage II - Design principles: how the product teaches", "stage_num": 2, "stage_range": "9-13", "eyebrow": "Representation", "title": "Show people who look like them, in homes that look like theirs", "summary": ["Credible characters - the shopkeeper who sells phones - and middle-class production design measurably increased belief; glossy sets read as fake and made the teaching feel inorganic (Rani TT recommendations). The same principle showed up in distribution: a folk dancer explaining the project in the regional dialect broke open a village that had ignored every campaign (HQ Annual 2023). Authenticity isn't a style choice; it's a comprehension and trust requirement."], "transition": "A well-designed product still has to reach people whose discovery channels aren't digital. That's the distribution game."}, {"num": 14, "stage": "Stage III - Distribution: how the product reaches them", "stage_num": 3, "stage_range": "14-17", "eyebrow": "Phygital", "title": "Go phygital: camps, SHG meetings, mic announcements", "summary": ["Haqdarshak's demand-generation playbook is explicit: area assessment, mapping influential stakeholders (community resource persons, panchayat officials, grassroot NGOs, high-social-capital individuals), scheme-specific camps, SHG and village-committee meetings, mic announcements and posters - then information-first trust building, because standard information campaigns fail to reach these audiences (HQ Annual 2023). One fixed problem compounds: a shopkeeper's Udyam registration corrected free on the spot brought 20 more shopkeepers the next day and turned into a camp (HQ Annual 2023)."], "transition": "Physical presence creates the first touch; the phone itself has to carry every one after that."}, {"num": 15, "stage": "Stage III - Distribution: how the product reaches them", "stage_num": 3, "stage_range": "14-17", "eyebrow": "Entry points", "title": "Live where the phone already is: widgets and home screens", "summary": ["Organically, most Rani users entered through the home-screen widget; its visibility drove discovery before any campaign did (Rani TT). Pre-install presence, a home-screen shortcut, and widget content with a clear premise ('watch more such videos') outperformed everything else. Discovery for this audience is accidental, not intentional - be on the glass they already look at (Rani TT recommendations)."], "transition": "The strongest channel, though, isn't a surface at all - it's the most motivated segment of your own user base."}, {"num": 16, "stage": "Stage III - Distribution: how the product reaches them", "stage_num": 3, "stage_range": "14-17", "eyebrow": "Agents as distribution", "title": "Recruit your Direction Setters as distribution", "summary": ["Haqdarshak's agents are local, trained, often women, and invested in their own communities - 'their growing investment in their communities differentiates our Haqdarshaks from agents and CSC centre workers' (HQ Annual 2023). The Curious Tinkerers from Rani already share what they learn with their own tech teachers (Rani TT). In Naman's frame: the Generative and Adaptive users are your future champions. Build the agent or mentor track into the product from day one - training, identity, and earnings - because this channel compounds like no ad campaign can."], "transition": "Agents carry trust person-to-person. Whole networks of pre-existing trust are waiting to be used directly."}, {"num": 17, "stage": "Stage III - Distribution: how the product reaches them", "stage_num": 3, "stage_range": "14-17", "eyebrow": "Existing rails", "title": "Ride existing trust networks like SHGs", "summary": ["43% of rural women entrepreneurs relied solely on SHG loans; SHGs win on lower interest, flexible terms, trust and community - not on price alone (HQ Women & Finance). Farmers prefer savings and friends-and-family borrowing over banks (30% vs 15%) (HQ Citizen Experiences). If your product needs a financial or distribution rail, integrate with the trusted informal structure rather than asking users to adopt a formal one cold. The SHG meeting is simultaneously a credit rail, a trust network, and a distribution venue."], "transition": "Every one of these channels only works if the trust mechanics underneath are engineered as deliberately as the product. That's the next stage."}, {"num": 18, "stage": "Stage IV - Trust mechanics: how the product earns belief", "stage_num": 4, "stage_range": "18-21", "eyebrow": "The first win", "title": "Open with a free, instant, visible win", "summary": ["The free e-Shram card, the on-the-spot document fix - these are trust deposits that precede any ask (HQ Annual 2023). Citizens approach with documented reasons to be suspicious: agents who vanished with fees, schemes that never arrived. Never lead with data collection; Aadhaar and PAN asks trigger fraud suspicion ('they get suspicious that we would misuse them'). Deliver value first, visibly and instantly, then ask (HQ Annual 2023)."], "transition": "The second trust mechanic is about the thing users have been lied to about most: price."}, {"num": 19, "stage": "Stage IV - Trust mechanics: how the product earns belief", "stage_num": 4, "stage_range": "18-21", "eyebrow": "Radical price honesty", "title": "Make pricing boringly honest", "summary": ["Citizens expect high fees and false promises - the agent who charged INR 300 for an INR 107 PAN card is both your competition and your cautionary tale (HQ Citizen Experiences). Misinformation is rampant: some believed the Ration card gets free medicine; an Ayushman Bharat cardholder was misinformed about her own entitlements. Show the official cost, your cost, and the difference, in plain words. Radical price transparency is a differentiator where everyone else hides the number."], "transition": "Honest pricing handles the start of the journey. The long middle - waiting on a system - is where most trust dies."}, {"num": 20, "stage": "Stage IV - Trust mechanics: how the product earns belief", "stage_num": 4, "stage_range": "18-21", "eyebrow": "Status and redressal", "title": "Grievance and status tracking are features, not support tickets", "summary": ["Citizens described applying for schemes and then having no idea how to follow up; officials gave no clarity even when asked directly ('they replied very rudely' - woman farmer, Jharkhand) (HQ Citizen Experiences). Haqdarshak's own recommendation: intermediaries who liaise with the government on application-status queries create impact at scale (HQ Social Protection Landscape). A visible progress tracker and a working redressal path aren't support features - they are the trust machine that makes every other promise believable."], "transition": "All of these mechanics face their hardest test in one place: the money screen."}, {"num": 21, "stage": "Stage IV - Trust mechanics: how the product earns belief", "stage_num": 4, "stage_range": "18-21", "eyebrow": "Money moments", "title": "Guard the money moments", "summary": ["Fraud fear blocks even advanced users from payment apps (Rani TT). On money screens: slow the pacing (users asked for exactly this on the GPay tutorial), make every step reversible, confirm in plain language, and show the safety net before the commit. One irreversible-feeling mistake - 'a small mistake can cause loss of money' - can convert your most motivated user into a permanent non-user (Rani TT)."], "transition": "Trust and design now have to survive the hardware and habits of the real world. Final stage: the constraints."}, {"num": 22, "stage": "Stage V - Tech constraints: what the real world imposes", "stage_num": 5, "stage_range": "22-26", "eyebrow": "Low literacy", "title": "Voice and visuals carry what text cannot", "summary": ["Voice search on YouTube was among the top skills novices replicated successfully - speaking is already their workaround for low literacy (Rani TT). Visual navigation (icons, landmarks) outperforms labels; video with vernacular narration and matching captions outperforms text. Google's I/O '19 talk names i18n and network speed as the headline NBU challenges (official session description). Design assumption: your user may not read fluently, and may prefer to speak."], "transition": "The device itself breaks another assumption baked into most products: one phone, one person."}, {"num": 23, "stage": "Stage V - Tech constraints: what the real world imposes", "stage_num": 5, "stage_range": "22-26", "eyebrow": "Shared devices", "title": "The phone is a household device, not a personal one", "summary": ["Smartphones in these households are shared, precious, and status-bearing: 'Everybody has it, why shouldn't we?' (Rani TT). Frightful Amateurs refrain from exploring for fear of damaging the family's valuable device. Accounts, privacy, saved state and sessions all need to survive multiple hands; a personal-password, single-identity model fits poorly. Design for the household, not just the individual (Rani TT)."], "transition": "And the usage pattern on that shared device has its own shape - one that most engagement models miss."}, {"num": 24, "stage": "Stage V - Tech constraints: what the real world imposes", "stage_num": 5, "stage_range": "22-26", "eyebrow": "Leisure windows", "title": "Learning happens in leisure windows, not sessions", "summary": ["Participants used Rani in free time after daily commitments, skimming and sampling; practice was rare because consumption was a leisure activity (Rani TT). Intermittent practice, not intermittent connectivity, is the hidden constraint: progress must survive days of absence, and re-entry must be instant (recently-watched, clear resumption). Google's I/O '17 talk frames the same population as 'facing very different constraints to accessing the internet' (official session description)."], "transition": "Underneath every constraint sits one universal gap that no UI alone can close."}, {"num": 25, "stage": "Stage V - Tech constraints: what the real world imposes", "stage_num": 5, "stage_range": "22-26", "eyebrow": "Literacy training", "title": "Every cohort needs digital and financial literacy training", "summary": ["The requirement for financial and digital literacy training was common to all cohorts and genders in the KOIS/Haqdarshak study (HQ Social Protection Landscape). Financial inclusion was lowest among under-25s (67% vs 80% for older); 86% had never enrolled in any government loan scheme. Whatever your product does, budget for teaching - onboarding that assumes digital fluency silently excludes the exact people you're building for."], "transition": "One source set remains that bears directly on all of this: the three Google talks themselves."}, {"num": 26, "stage": "Stage V - Tech constraints: what the real world imposes", "stage_num": 5, "stage_range": "22-26", "eyebrow": "The Google NBU talks", "title": "The canonical technical brief, still being transcribed", "summary": ["The three talks Naman sent are Google's own NBU doctrine: 'Building for Your Next Billion Users' (Chrome, I/O '17, 43 min), 'Build apps for the next billion users' (Android, I/O '19, 31 min - names i18n and network speed as the headline challenges, plus Google SDKs for NBU markets), and 'TechSessions - Next Billion Users with Amrit Sanjeev' (Google for Developers India, 36 min - emerging-market trends). Full transcripts are pending (YouTube rate-limited every extraction route tonight; a retry is running). Their specific guidance on low-end devices, offline-first design, data cost and localization will be added to the notes layer and the doc when the transcripts land - nothing here is guessed."], "transition": ""}];
+const CONCEPTS = [
+  {
+    "num": 1,
+    "stage": "Stage I - The big picture: what every source agrees on",
+    "stage_num": 1,
+    "stage_range": "1-8",
+    "eyebrow": "The real gap",
+    "title": "Access is solved; agency is not",
+    "summary": [
+      "99% of rural women entrepreneurs already have bank accounts, and UPI is everywhere (HQ Women & Finance). Yet 76% of informal workers who never enroll in welfare schemes skip them simply because they don't know they exist (HQ Social Protection Landscape). Project Rani's novices own smartphones but treat them as precious objects they're scared of damaging, using only calling and messaging (Project Rani Trusted Tester x Turian Labs). The constraint to design against is not hardware or connectivity - it's the user's belief about what they're allowed to try. Naman's 'Value Stagnation' thesis is confirmed by all three source sets: the tools (UPI, smartphones) are present; the rails for compounding are missing."
+    ],
+    "transition": "If the gap is agency rather than access, the next question is who currently supplies that agency - and the answer is not an app."
+  },
+  {
+    "num": 2,
+    "stage": "Stage I - The big picture: what every source agrees on",
+    "stage_num": 1,
+    "stage_range": "1-8",
+    "eyebrow": "Tech teachers and agents",
+    "title": "The real onboarding layer is a human",
+    "summary": [
+      "Novice users learn from 'tech teachers' - family members they approach when stuck, not when curious (Rani TT). Haqdarshak reached 26 lakh citizens through 26,563 trained local agents who become 'community resource persons,' not mere service providers (HQ Annual 2023). Users judge any product against this human benchmark: instant, face-to-face query resolution was the one thing Rani's videos couldn't match ('in the app all you can do is watch carefully and hope you will figure it out' - P33). Design the human-assist loop - WhatsApp help, a local champion, voice query - as a first-class feature, not a support afterthought."
+    ],
+    "transition": "But even the best human teaches the way Rani's users already learn - and it isn't by listening."
+  },
+  {
+    "num": 3,
+    "stage": "Stage I - The big picture: what every source agrees on",
+    "stage_num": 1,
+    "stage_range": "1-8",
+    "eyebrow": "Visual learning",
+    "title": "Users learn with their eyes, not their ears",
+    "summary": [
+      "Rani participants replicated clicks and memorized the symbols tapped, often without understanding the underlying concept; one participant with weak English 'watched what they were doing rather than listening to what they were saying' (Rani TT). Rewatching is the norm, so unlimited replays matter. The most effective instruction is landmark-based: 'the moon icon on the top right of the screen' beats any abstract label (Rani TT recommendations). Concept-driven narratives - 'this feature works the same way across apps' - transfer learning further than step lists."
+    ],
+    "transition": "Visual learning has a hard failure mode: it only transfers if what they saw matches what they see."
+  },
+  {
+    "num": 4,
+    "stage": "Stage I - The big picture: what every source agrees on",
+    "stage_num": 1,
+    "stage_range": "1-8",
+    "eyebrow": "Fidelity",
+    "title": "Any mismatch with their screen kills the transfer",
+    "summary": [
+      "A single label difference - the tutorial said 'Anuvad Kare' but the real screen said 'Translate' - confused a user mid-task (Rani TT). English UI inside Hindi tutorials made buttons like 'Try now' invisible. Even set design broke belief: an educated-looking home made the learner-in-video feel fake ('she seems educated yet says she does not know how to use an android phone' - P18). The production rule: match the user's actual device, language, home and social reality as closely as possible - and when you can't, say so inside the content itself."
+    ],
+    "transition": "Fidelity earns you the attempt. What earns you the next one is something older than any UI: trust."
+  },
+  {
+    "num": 5,
+    "stage": "Stage I - The big picture: what every source agrees on",
+    "stage_num": 1,
+    "stage_range": "1-8",
+    "eyebrow": "Trust mechanics",
+    "title": "Trust is earned in small, free wins - and fraud fear is rational",
+    "summary": [
+      "This population has been burned: INR 1,500 paid to an agent for a domicile certificate that never came; a private CSC charging INR 300 for a PAN card that officially costs INR 107 (HQ Annual 2023; HQ Citizen Experiences). Haqdarshak agents break the ice by doing something small and free first - an e-Shram card, a document fixed on the spot - then trust follows. Even advanced smartphone users avoid payment apps 'due to fear of frauds' (Rani TT). Sequence every ask: deliver value before requesting data, permissions, or money."
+    ],
+    "transition": "And there is one feature where trust matters more than anywhere else - the one they want most."
+  },
+  {
+    "num": 6,
+    "stage": "Stage I - The big picture: what every source agrees on",
+    "stage_num": 1,
+    "stage_range": "1-8",
+    "eyebrow": "Money features",
+    "title": "Payments are the aspiration and the anxiety in one",
+    "summary": [
+      "Across Rani's four user profiles, digital payments and navigation were the content that triggered the most interest - and the most caution. Participants asked for slower, step-by-step pacing on the GPay tutorial precisely because 'a small mistake can cause loss of money' (P18, Rani TT). Money features are the highest-stakes screens in your product: slow them down, make every step reversible, and show the safety net. The feature that unlocks compounding is also the feature that can destroy trust in one bad moment."
+    ],
+    "transition": "Who feels that anxiety, and who feels ready, turns out to have little to do with age or income."
+  },
+  {
+    "num": 7,
+    "stage": "Stage I - The big picture: what every source agrees on",
+    "stage_num": 1,
+    "stage_range": "1-8",
+    "eyebrow": "The four profiles",
+    "title": "Segment by mindset and exposure, not demographics",
+    "summary": [
+      "Rani's research found behavior clusters that cut across age and income: the Frightful Amateur (device is precious, entertainment only), the Curious Tinkerer (tries everything, wants more), the Stagnant Learner (tries only what seems relevant), and the Advanced Sampler (wants shopping, payments, banking; dismisses basics) (Rani TT). The same person moves between states. These map onto Naman's will-axis: Frightful Amateurs are the Pushed, Tinkerers and Samplers are Makers, and Direction Setters are who Haqdarshak recruits as agents. Build for the transition between states - that is where the 'Threshold of Agitation' lives."
+    ],
+    "transition": "Once you see the states, the final insight explains what actually moves someone across one."
+  },
+  {
+    "num": 8,
+    "stage": "Stage I - The big picture: what every source agrees on",
+    "stage_num": 1,
+    "stage_range": "1-8",
+    "eyebrow": "What compounds",
+    "title": "Durable assets beat one-time benefits",
+    "summary": [
+      "Citizens value identity and compliance documents more than one-time cash benefits, because documents keep paying (HQ Archives, Direct Implementation). Nearly 60% of informal workers are enrolled in no scheme at all; income certificate, e-Shram and caste certificate are the most-missed documents (HQ Social Protection Landscape). For the 'consuming to compounding' lever: the first compoundable asset for this population is often a document, a record, a verified identity - not money. Products that build the asset layer unlock everything after it."
+    ],
+    "transition": "Those are the eight load-bearing facts. The rest of the spine turns them into moves, starting with how the product itself should teach."
+  },
+  {
+    "num": 9,
+    "stage": "Stage II - Design principles: how the product teaches",
+    "stage_num": 2,
+    "stage_range": "9-13",
+    "eyebrow": "Deconstruction",
+    "title": "Teach one deconstructed task at a time",
+    "summary": [
+      "Deconstructed, single-task steps produced the proudest moment in the Rani study: 'I followed exactly as per the video. I did it on my own. I am very proud of myself' (P1). Multi-step, fast-paced flows (the GPay video) caused low retention, drop-off, and avoidance of the app in future. Rule: one task per lesson, visible completion, performed by the user themselves - pride in self-completion is the retention engine (Rani TT)."
+    ],
+    "transition": "A single task learned once is still fragile, because of when and how this audience consumes content."
+  },
+  {
+    "num": 10,
+    "stage": "Stage II - Design principles: how the product teaches",
+    "stage_num": 2,
+    "stage_range": "9-13",
+    "eyebrow": "Rewatching",
+    "title": "Design for rewatching and leisure-time sampling",
+    "summary": [
+      "Content is consumed in free time, skimmed like infotainment, and rarely practiced immediately (Rani TT). So make every unit re-findable - recently-watched, search, per-feature sections - and make rewatching cost nothing. Then re-surface the right guidance inside the real product at the moment of need: Rani's top recommendation was integrating tutorials into the first-time walkthrough of the actual feature, prompted when the user samples something new (Rani TT recommendations)."
+    ],
+    "transition": "Re-findable content still fails if the words on screen aren't the user's own."
+  },
+  {
+    "num": 11,
+    "stage": "Stage II - Design principles: how the product teaches",
+    "stage_num": 2,
+    "stage_range": "9-13",
+    "eyebrow": "Language",
+    "title": "Use their language - and let them switch it",
+    "summary": [
+      "Hindi UI was appreciated, but users still wanted a language-choice option; English terms inside Hindi flows silently failed ('Try now' was never clicked because it wasn't understood) (Rani TT). Default to vernacular, always offer the switch, and never mix languages inside a single instruction. Captions and on-screen text in the same language as the narration were explicitly requested."
+    ],
+    "transition": "Even a perfectly localized product dies quietly if it stops being new."
+  },
+  {
+    "num": 12,
+    "stage": "Stage II - Design principles: how the product teaches",
+    "stage_num": 2,
+    "stage_range": "9-13",
+    "eyebrow": "Fresh content",
+    "title": "Fresh content on the apps they already love is the retention loop",
+    "summary": [
+      "Users sampled Rani's tutorials quickly, then lapsed to YouTube's wider range; their demand was for regularly updated content on third-party apps - WhatsApp, Instagram, Sharechat - the things their social circles use (Rani TT). A standalone learning app loses to an app with broader offerings; either integrate into something they already open daily, or keep feeding new, socially-relevant content. A small gamification nudge like 'Feature of the Day' pushes users out of their comfort zone (Rani TT recommendations)."
+    ],
+    "transition": "Content keeps them; believability converts them. And believability has a look."
+  },
+  {
+    "num": 13,
+    "stage": "Stage II - Design principles: how the product teaches",
+    "stage_num": 2,
+    "stage_range": "9-13",
+    "eyebrow": "Representation",
+    "title": "Show people who look like them, in homes that look like theirs",
+    "summary": [
+      "Credible characters - the shopkeeper who sells phones - and middle-class production design measurably increased belief; glossy sets read as fake and made the teaching feel inorganic (Rani TT recommendations). The same principle showed up in distribution: a folk dancer explaining the project in the regional dialect broke open a village that had ignored every campaign (HQ Annual 2023). Authenticity isn't a style choice; it's a comprehension and trust requirement."
+    ],
+    "transition": "A well-designed product still has to reach people whose discovery channels aren't digital. That's the distribution game."
+  },
+  {
+    "num": 14,
+    "stage": "Stage III - Distribution: how the product reaches them",
+    "stage_num": 3,
+    "stage_range": "14-17",
+    "eyebrow": "Phygital",
+    "title": "Go phygital: camps, SHG meetings, mic announcements",
+    "summary": [
+      "Haqdarshak's demand-generation playbook is explicit: area assessment, mapping influential stakeholders (community resource persons, panchayat officials, grassroot NGOs, high-social-capital individuals), scheme-specific camps, SHG and village-committee meetings, mic announcements and posters - then information-first trust building, because standard information campaigns fail to reach these audiences (HQ Annual 2023). One fixed problem compounds: a shopkeeper's Udyam registration corrected free on the spot brought 20 more shopkeepers the next day and turned into a camp (HQ Annual 2023)."
+    ],
+    "transition": "Physical presence creates the first touch; the phone itself has to carry every one after that."
+  },
+  {
+    "num": 15,
+    "stage": "Stage III - Distribution: how the product reaches them",
+    "stage_num": 3,
+    "stage_range": "14-17",
+    "eyebrow": "Entry points",
+    "title": "Live where the phone already is: widgets and home screens",
+    "summary": [
+      "Organically, most Rani users entered through the home-screen widget; its visibility drove discovery before any campaign did (Rani TT). Pre-install presence, a home-screen shortcut, and widget content with a clear premise ('watch more such videos') outperformed everything else. Discovery for this audience is accidental, not intentional - be on the glass they already look at (Rani TT recommendations)."
+    ],
+    "transition": "The strongest channel, though, isn't a surface at all - it's the most motivated segment of your own user base."
+  },
+  {
+    "num": 16,
+    "stage": "Stage III - Distribution: how the product reaches them",
+    "stage_num": 3,
+    "stage_range": "14-17",
+    "eyebrow": "Agents as distribution",
+    "title": "Recruit your Direction Setters as distribution",
+    "summary": [
+      "Haqdarshak's agents are local, trained, often women, and invested in their own communities - 'their growing investment in their communities differentiates our Haqdarshaks from agents and CSC centre workers' (HQ Annual 2023). The Curious Tinkerers from Rani already share what they learn with their own tech teachers (Rani TT). In Naman's frame: the Generative and Adaptive users are your future champions. Build the agent or mentor track into the product from day one - training, identity, and earnings - because this channel compounds like no ad campaign can."
+    ],
+    "transition": "Agents carry trust person-to-person. Whole networks of pre-existing trust are waiting to be used directly."
+  },
+  {
+    "num": 17,
+    "stage": "Stage III - Distribution: how the product reaches them",
+    "stage_num": 3,
+    "stage_range": "14-17",
+    "eyebrow": "Existing rails",
+    "title": "Ride existing trust networks like SHGs",
+    "summary": [
+      "43% of rural women entrepreneurs relied solely on SHG loans; SHGs win on lower interest, flexible terms, trust and community - not on price alone (HQ Women & Finance). Farmers prefer savings and friends-and-family borrowing over banks (30% vs 15%) (HQ Citizen Experiences). If your product needs a financial or distribution rail, integrate with the trusted informal structure rather than asking users to adopt a formal one cold. The SHG meeting is simultaneously a credit rail, a trust network, and a distribution venue."
+    ],
+    "transition": "Every one of these channels only works if the trust mechanics underneath are engineered as deliberately as the product. That's the next stage."
+  },
+  {
+    "num": 18,
+    "stage": "Stage IV - Trust mechanics: how the product earns belief",
+    "stage_num": 4,
+    "stage_range": "18-21",
+    "eyebrow": "The first win",
+    "title": "Open with a free, instant, visible win",
+    "summary": [
+      "The free e-Shram card, the on-the-spot document fix - these are trust deposits that precede any ask (HQ Annual 2023). Citizens approach with documented reasons to be suspicious: agents who vanished with fees, schemes that never arrived. Never lead with data collection; Aadhaar and PAN asks trigger fraud suspicion ('they get suspicious that we would misuse them'). Deliver value first, visibly and instantly, then ask (HQ Annual 2023)."
+    ],
+    "transition": "The second trust mechanic is about the thing users have been lied to about most: price."
+  },
+  {
+    "num": 19,
+    "stage": "Stage IV - Trust mechanics: how the product earns belief",
+    "stage_num": 4,
+    "stage_range": "18-21",
+    "eyebrow": "Radical price honesty",
+    "title": "Make pricing boringly honest",
+    "summary": [
+      "Citizens expect high fees and false promises - the agent who charged INR 300 for an INR 107 PAN card is both your competition and your cautionary tale (HQ Citizen Experiences). Misinformation is rampant: some believed the Ration card gets free medicine; an Ayushman Bharat cardholder was misinformed about her own entitlements. Show the official cost, your cost, and the difference, in plain words. Radical price transparency is a differentiator where everyone else hides the number."
+    ],
+    "transition": "Honest pricing handles the start of the journey. The long middle - waiting on a system - is where most trust dies."
+  },
+  {
+    "num": 20,
+    "stage": "Stage IV - Trust mechanics: how the product earns belief",
+    "stage_num": 4,
+    "stage_range": "18-21",
+    "eyebrow": "Status and redressal",
+    "title": "Grievance and status tracking are features, not support tickets",
+    "summary": [
+      "Citizens described applying for schemes and then having no idea how to follow up; officials gave no clarity even when asked directly ('they replied very rudely' - woman farmer, Jharkhand) (HQ Citizen Experiences). Haqdarshak's own recommendation: intermediaries who liaise with the government on application-status queries create impact at scale (HQ Social Protection Landscape). A visible progress tracker and a working redressal path aren't support features - they are the trust machine that makes every other promise believable."
+    ],
+    "transition": "All of these mechanics face their hardest test in one place: the money screen."
+  },
+  {
+    "num": 21,
+    "stage": "Stage IV - Trust mechanics: how the product earns belief",
+    "stage_num": 4,
+    "stage_range": "18-21",
+    "eyebrow": "Money moments",
+    "title": "Guard the money moments",
+    "summary": [
+      "Fraud fear blocks even advanced users from payment apps (Rani TT). On money screens: slow the pacing (users asked for exactly this on the GPay tutorial), make every step reversible, confirm in plain language, and show the safety net before the commit. One irreversible-feeling mistake - 'a small mistake can cause loss of money' - can convert your most motivated user into a permanent non-user (Rani TT)."
+    ],
+    "transition": "Trust and design now have to survive the hardware and habits of the real world. Final stage: the constraints."
+  },
+  {
+    "num": 22,
+    "stage": "Stage V - Tech constraints: what the real world imposes",
+    "stage_num": 5,
+    "stage_range": "22-26",
+    "eyebrow": "Low literacy",
+    "title": "Voice and visuals carry what text cannot",
+    "summary": [
+      "Voice search on YouTube was among the top skills novices replicated successfully - speaking is already their workaround for low literacy (Rani TT). Visual navigation (icons, landmarks) outperforms labels; video with vernacular narration and matching captions outperforms text. Google's I/O '19 talk names i18n and network speed as the headline NBU challenges (official session description). Design assumption: your user may not read fluently, and may prefer to speak."
+    ],
+    "transition": "The device itself breaks another assumption baked into most products: one phone, one person."
+  },
+  {
+    "num": 23,
+    "stage": "Stage V - Tech constraints: what the real world imposes",
+    "stage_num": 5,
+    "stage_range": "22-26",
+    "eyebrow": "Shared devices",
+    "title": "The phone is a household device, not a personal one",
+    "summary": [
+      "Smartphones in these households are shared, precious, and status-bearing: 'Everybody has it, why shouldn't we?' (Rani TT). Frightful Amateurs refrain from exploring for fear of damaging the family's valuable device. Accounts, privacy, saved state and sessions all need to survive multiple hands; a personal-password, single-identity model fits poorly. Design for the household, not just the individual (Rani TT)."
+    ],
+    "transition": "And the usage pattern on that shared device has its own shape - one that most engagement models miss."
+  },
+  {
+    "num": 24,
+    "stage": "Stage V - Tech constraints: what the real world imposes",
+    "stage_num": 5,
+    "stage_range": "22-26",
+    "eyebrow": "Leisure windows",
+    "title": "Learning happens in leisure windows, not sessions",
+    "summary": [
+      "Participants used Rani in free time after daily commitments, skimming and sampling; practice was rare because consumption was a leisure activity (Rani TT). Intermittent practice, not intermittent connectivity, is the hidden constraint: progress must survive days of absence, and re-entry must be instant (recently-watched, clear resumption). Google's I/O '17 talk frames the same population as 'facing very different constraints to accessing the internet' (official session description)."
+    ],
+    "transition": "Underneath every constraint sits one universal gap that no UI alone can close."
+  },
+  {
+    "num": 25,
+    "stage": "Stage V - Tech constraints: what the real world imposes",
+    "stage_num": 5,
+    "stage_range": "22-26",
+    "eyebrow": "Literacy training",
+    "title": "Every cohort needs digital and financial literacy training",
+    "summary": [
+      "The requirement for financial and digital literacy training was common to all cohorts and genders in the KOIS/Haqdarshak study (HQ Social Protection Landscape). Financial inclusion was lowest among under-25s (67% vs 80% for older); 86% had never enrolled in any government loan scheme. Whatever your product does, budget for teaching - onboarding that assumes digital fluency silently excludes the exact people you're building for."
+    ],
+    "transition": "One source set remains that bears directly on all of this: the three Google talks themselves."
+  },
+  {
+    "num": 26,
+    "stage": "Stage V - Tech constraints: what the real world imposes",
+    "stage_num": 5,
+    "stage_range": "22-26",
+    "eyebrow": "The Google NBU talks",
+    "title": "The canonical technical brief, still being transcribed",
+    "summary": [
+      "The three talks Naman sent are Google's own NBU doctrine: 'Building for Your Next Billion Users' (Chrome, I/O '17, 43 min), 'Build apps for the next billion users' (Android, I/O '19, 31 min - names i18n and network speed as the headline challenges, plus Google SDKs for NBU markets), and 'TechSessions - Next Billion Users with Amrit Sanjeev' (Google for Developers India, 36 min - emerging-market trends). Full transcripts are pending (YouTube rate-limited every extraction route tonight; a retry is running). Their specific guidance on low-end devices, offline-first design, data cost and localization will be added to the notes layer and the doc when the transcripts land - nothing here is guessed."
+    ],
+    "transition": ""
+  },
+  {
+    "num": 27,
+    "stage": "Stage VI - What shifts behaviour: the lever layer",
+    "stage_num": 6,
+    "stage_range": "27-39",
+    "eyebrow": "The framing anecdote",
+    "title": "You get the behaviour you measure, not the behaviour you want",
+    "summary": [
+      "Naman's Instagram find (hyperfocus.hq reel, Sept 1, 2026), verbatim: \"Colonial Delhi had too many cobras. So the British offered a bounty for every dead cobra brought in. It worked. Then people started breeding cobras. The government canceled the scheme. The breeders released their worthless snakes. Delhi ended with more cobras than before it started. Economists call this the cobra effect. The rule is, you don't get the behavior you want, you get the behavior you measure... Most people go their whole life without knowing why the rules around them are so strange. Not because they're not smart, because nobody ever hands them the idea.\"",
+      "Why it belongs here: it is the Value Stagnation thesis in twenty seconds. Welfare schemes measure enrollment, so everyone optimizes enrollment - and 76% of eligible workers stay unenrolled while targets get hit. And the closing line is the distribution insight: nobody ever hands them the idea. Agency begins when someone is handed the idea that they are allowed. Every lever that follows is a way of handing it to them."
+    ],
+    "transition": "So which levers actually hand it to them? Ten, ranked by strength of evidence - each as a decision rule, not a label."
+  },
+  {
+    "num": 28,
+    "stage": "Stage VI - What shifts behaviour: the lever layer",
+    "stage_num": 6,
+    "stage_range": "27-39",
+    "eyebrow": "Lever 1 - Mastery",
+    "title": "Stage small wins they finish themselves - agency comes from \"I did it once\"",
+    "summary": [
+      "If a user must come to believe \"I can do this,\" then don't tell them - engineer a two-minute success they complete with their own hands, today.",
+      "Bandura (1977) ranks mastery experiences as the strongest source of self-efficacy, above persuasion and above watching others. Rani shows the failure mode: when the tech teacher does it FOR the novice, confidence never forms."
+    ],
+    "transition": "A user who did it once still has to follow through tomorrow - which is a different lever."
+  },
+  {
+    "num": 29,
+    "stage": "Stage VI - What shifts behaviour: the lever layer",
+    "stage_num": 6,
+    "stage_range": "27-39",
+    "eyebrow": "Lever 2 - If-then plans",
+    "title": "Turn every intention into an if-then plan before the user leaves",
+    "summary": [
+      "If a user says \"I will save\" or \"I will apply,\" then don't end there - have them state when, where and how: \"After the 10th, when the remittance arrives, I open the app and move 200 rupees.\"",
+      "Gollwitzer and Sheeran (2006), 94 tests: implementation intentions give a medium-to-large jump in follow-through (d = 0.65). The plan moves the decision from future willpower to a trigger the environment fires."
+    ],
+    "transition": "But even a good plan dies if doing nothing is easier than doing something."
+  },
+  {
+    "num": 30,
+    "stage": "Stage VI - What shifts behaviour: the lever layer",
+    "stage_num": 6,
+    "stage_range": "27-39",
+    "eyebrow": "Lever 3 - Defaults",
+    "title": "Make doing nothing the growth move",
+    "summary": [
+      "If the user does nothing at all, then that nothing should still move them up one rung: auto-enrolled, auto-saved, opted in, free to leave.",
+      "Defaults are among the strongest levers in behavioural science (Thaler and Sunstein, Nudge). Organ-donor consent goes from single digits to near-universal when consent is the default. Inertia is the dominant behaviour in this population - stop fighting it, aim it."
+    ],
+    "transition": "Defaults move the willing majority; the skeptical need to see someone like them first."
+  },
+  {
+    "num": 31,
+    "stage": "Stage VI - What shifts behaviour: the lever layer",
+    "stage_num": 6,
+    "stage_range": "27-39",
+    "eyebrow": "Lever 4 - Social proof",
+    "title": "Prove people like them already do it - and make it literal",
+    "summary": [
+      "If a user wonders \"is this for people like me,\" then show a person from their district, their income band, their life doing it - a video, not a statistic.",
+      "Cialdini's descriptive norms; the Behavioural Insights Team raised tax repayment by truthfully telling late payers nine out of ten pay on time (Hallsworth et al., 2017, 200,000+ taxpayers, zero cost). Bandura's second source of efficacy is vicarious experience. \"People like them\" is not a metaphor - it is the mechanism."
+    ],
+    "transition": "Even with proof, a first step that costs too much effort will not happen."
+  },
+  {
+    "num": 32,
+    "stage": "Stage VI - What shifts behaviour: the lever layer",
+    "stage_num": 6,
+    "stage_range": "27-39",
+    "eyebrow": "Lever 5 - Tiny first step",
+    "title": "Shrink the first step until refusing it feels silly",
+    "summary": [
+      "If motivation is low or trust is thin, then don't raise motivation - cut the ability cost: one tap, one screen, one number, one minute.",
+      "Fogg's Behavior Model: behaviour happens only when motivation, ability and a prompt converge in the same moment, and at the moment of action ability beats motivation. Haqdarshak's camps are this lever made physical: the first step is walking up to a table, not completing a form."
+    ],
+    "transition": "A tiny step still competes with today - and today always wins unless you pay it."
+  },
+  {
+    "num": 33,
+    "stage": "Stage VI - What shifts behaviour: the lever layer",
+    "stage_num": 6,
+    "stage_range": "27-39",
+    "eyebrow": "Lever 6 - Immediate reward",
+    "title": "Pay the present self today, not the future self someday",
+    "summary": [
+      "If the payoff is distant and the user lives in the present, then attach a small, immediate, concrete reward to the action itself.",
+      "Rural Rajasthan (Banerjee, Duflo, Glennerster and Kothari, BMJ 2010): reliable immunization camps lifted full immunization from 6% to 17%; adding a kilogram of lentils per visit lifted it to 39%. A kilo of dal beat a lifetime of disease protection because it lands today."
+    ],
+    "transition": "Immediate rewards start behaviour; keeping it going needs the user's own future self on your side."
+  },
+  {
+    "num": 34,
+    "stage": "Stage VI - What shifts behaviour: the lever layer",
+    "stage_num": 6,
+    "stage_range": "27-39",
+    "eyebrow": "Lever 7 - Commitment",
+    "title": "Let users tie their own hands",
+    "summary": [
+      "If a user wants to save, learn or apply but fears their own future weakness, then offer the lock voluntarily: money untouchable until a date, a goal declared to their SHG, a class pre-booked.",
+      "Ashraf, Karlan and Yin (2006, SEED, Philippines): offered a withdrawal-restricted savings account, 28% took it and their balances grew significantly versus both control groups. About one in four users knows their future self is unreliable - and will take the rope."
+    ],
+    "transition": "When you offer any of this matters as much as what you offer."
+  },
+  {
+    "num": 35,
+    "stage": "Stage VI - What shifts behaviour: the lever layer",
+    "stage_num": 6,
+    "stage_range": "27-39",
+    "eyebrow": "Lever 8 - Fresh starts",
+    "title": "Launch at landmarks - timing is a lever, not a detail",
+    "summary": [
+      "If you want a habit installed or a lapsed user back, then approach at a temporal landmark: the 1st of the month (salary day), Monday, Diwali, harvest, a birthday, a new phone.",
+      "Dai, Milkman and Riis (2014, Management Science): aspirational behaviour spikes at landmarks because people feel like a new self - the old self's failures belong to the past. Build interview calendars and re-engagement pushes around these dates."
+    ],
+    "transition": "Timing gets the attempt; what the user believes about themselves decides whether it survives a failure."
+  },
+  {
+    "num": 36,
+    "stage": "Stage VI - What shifts behaviour: the lever layer",
+    "stage_num": 6,
+    "stage_range": "27-39",
+    "eyebrow": "Lever 9 - Identity",
+    "title": "Hand them an identity, not a task",
+    "summary": [
+      "If a user resists an action, then stop selling the action and name who they become: not \"save money\" but \"you are someone who saves\"; not \"fill this form\" but \"you are an entrepreneur now.\"",
+      "Bryan, Walton, Rogers and Dweck (2011): identity framing (\"be a voter\") outperforms task framing (\"vote\"). Rani's profiles show the wall is already identity-shaped - \"I am not a phone person\" - so the key must be identity-shaped too. Identity survives a failed attempt; compliance does not."
+    ],
+    "transition": "One lever remains - the strongest and the most dangerous."
+  },
+  {
+    "num": 37,
+    "stage": "Stage VI - What shifts behaviour: the lever layer",
+    "stage_num": 6,
+    "stage_range": "27-39",
+    "eyebrow": "Lever 10 - Loss framing",
+    "title": "Use loss framing last, and only after trust exists",
+    "summary": [
+      "If - and only if - the user already trusts you, then show what waiting costs them.",
+      "Losses loom larger than gains (Kahneman and Tversky, 1979). That makes loss framing powerful and dangerous: where fraud fear blocks even advanced users from payments, a loss-framed message reads as a threat and trips the fraud alarm. Ranked last not because it is weak, but because it is the only lever that can destroy the trust the other nine build."
+    ],
+    "transition": "Ten levers need one frame to hold them - a ladder, not a list."
+  },
+  {
+    "num": 38,
+    "stage": "Stage VI - What shifts behaviour: the lever layer",
+    "stage_num": 6,
+    "stage_range": "27-39",
+    "eyebrow": "The framework",
+    "title": "The Agency Ladder: five rungs, every stall is a dropped rung",
+    "summary": [
+      "Rung 1 - SEE IT: someone like me has done this (levers 4, 9). Probe: \"Do you know anyone who has done this?\" A no means start here.",
+      "Rung 2 - FEEL ALLOWED: this is for people like me (levers 9, 4). Probe: \"Who do you think this is for?\" A wrong answer means nothing higher matters yet.",
+      "Rung 3 - DO IT SMALL: a two-minute win, today, finished by their own hand (levers 1, 5, 6). Probe: watch them do one real task on their own phone; every hesitation is a felt-permission wall.",
+      "Rung 4 - MAKE IT STICK: if-then plan, default, commitment lock (levers 2, 3, 7). Probe: end every interview by offering one lock-in - take-up is the ground-truth demand curve.",
+      "Rung 5 - COME BACK HIGHER: fresh-start timing, next step sized to new confidence, loss framing only once trust exists (levers 8, 10)."
+    ],
+    "transition": "A ladder tells you where to push; field tests tell you whether it worked."
+  },
+  {
+    "num": 39,
+    "stage": "Stage VI - What shifts behaviour: the lever layer",
+    "stage_num": 6,
+    "stage_range": "27-39",
+    "eyebrow": "Field tests",
+    "title": "Five ground tests that confirm or kill each lever",
+    "summary": [
+      "The past-attempt autopsy: \"tell me about the last time you actually tried.\" Failed big first step = levers 5 and 1 bind. Started-and-stopped = levers 2 and 8 bind.",
+      "The live attempt: watch one real task on their own phone, unassisted. Hesitation points mark the felt-permission boundary.",
+      "The \"who is this for\" question, asked about UPI, a scheme, and your idea: the answers map their permission structure.",
+      "The commitment offer: \"want me to remind you on salary day - and you cannot defer it?\" Take-up is a falsifiable prediction; SEED says about one in four.",
+      "The cobra check on yourself: write the one metric your pilot optimizes, then ask how a clever field agent would game it. If you cannot answer in five minutes, you are about to pay bounties for dead cobras."
+    ],
+    "transition": "Sources: Bandura 1977; Gollwitzer and Sheeran 2006; Thaler and Sunstein 2008; Hallsworth et al. 2017; Fogg (Stanford); Banerjee et al. 2010 (BMJ); Ashraf, Karlan and Yin 2006 (QJE); Dai, Milkman and Riis 2014; Bryan et al. 2011; Kahneman and Tversky 1979; hyperfocus.hq reel (Sept 1, 2026). Full ledger in the notes."
+  }
+];
 const STAGE_COLORS = {1:'var(--s1)',2:'var(--s2)',3:'var(--s3)',4:'var(--s4)',5:'var(--s5)'};
 const feed = document.getElementById('feed');
 let lastStage = null;
