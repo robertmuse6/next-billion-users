@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Tools for the Next Billion Users - The Evidence Playbook</title>
-<meta name="description" content="18 sources - Haqdarshak reports, Project Rani UX research, and Google NBU talks - distilled into 39 evidence-backed moves for building tools for the next billion users: design, distribution, trust, and tech constraints.">
+<meta name="description" content="18 sources - Haqdarshak reports, Project Rani UX research, and Google NBU talks - distilled into 49 evidence-backed moves for building tools for the next billion users: design, distribution, trust, tech constraints, behaviour levers, and Google's own doctrine.">
 <style>
 :root{
   --bg:#0b0d10; --card:#14181d; --card2:#1a1f26; --ink:#e8eaed; --dim:#9aa3ad;
   --accent:#ffb020; --line:#242b33; --chip:#222932;
-  --s1:#7dd3fc; --s2:#c4b5fd; --s3:#86efac; --s4:#fca5a5; --s5:#fcd34d;--s6:#f0abfc;
+  --s1:#7dd3fc; --s2:#c4b5fd; --s3:#86efac; --s4:#fca5a5; --s5:#fcd34d;--s6:#f0abfc;--s7:#5eead4;
 }
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
 html{scroll-behavior:smooth}
@@ -75,6 +75,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(11,13,16,.92);backdrop-f
 #notesView ul,#notesView ol{margin:0 0 14px 22px}
 #notesView li{font-size:14px;color:#c3cad2;margin-bottom:6px}
 #notesView a{color:var(--s1)}
+.csum a,.detail a{color:var(--s7);text-decoration:underline;text-underline-offset:2px}
 #notesView table{width:100%;border-collapse:collapse;font-size:13px;margin:0 0 16px}
 #notesView td,#notesView th{border:1px solid var(--line);padding:6px 8px;text-align:left}
 
@@ -99,7 +100,7 @@ footer{padding:30px 0 60px;color:var(--dim);font-size:12.5px;text-align:center}
     <section class="hero">
       <div class="kicker">Next Billion Users - 18 sources - one playbook</div>
       <h1>Access is solved. Agency is not. Build for that.</h1>
-      <p>39 evidence-backed moves, from the big picture to the real-world constraints: what every source agrees on, how the product should teach, how it should reach people, how it earns trust, and what the real world imposes. Built from Haqdarshak's reports, Google's Project Rani research, and Naman's Systems of Ascent agenda. Scroll the storyline. Tap any card for the full idea and why it forces the next one.</p>
+      <p>49 evidence-backed moves, from the big picture to the real-world constraints: what every source agrees on, how the product should teach, how it reaches people, how it earns trust, what the real world imposes, which levers shift behaviour - and what Google itself proved, distilled from the full transcripts of its three NBU talks. Built from Haqdarshak's reports, Google's Project Rani research, and Naman's Systems of Ascent agenda. Scroll the storyline. Tap any card for the full idea and why it forces the next one.</p>
       <div class="legend">
         <span style="border-color:var(--s1);color:var(--s1)">I. The big picture</span>
         <span style="border-color:var(--s2);color:var(--s2)">II. Design principles</span>
@@ -107,6 +108,7 @@ footer{padding:30px 0 60px;color:var(--dim);font-size:12.5px;text-align:center}
         <span style="border-color:var(--s4);color:var(--s4)">IV. Trust mechanics</span>
         <span style="border-color:var(--s5);color:var(--s5)">V. Tech constraints</span>
         <span style="border-color:var(--s6);color:var(--s6)">VI. What shifts behaviour</span>
+        <span style="border-color:var(--s7);color:var(--s7)">VII. Google's doctrine</span>
       </div>
     </section>
     <div id="feed"></div>
@@ -190,8 +192,8 @@ footer{padding:30px 0 60px;color:var(--dim);font-size:12.5px;text-align:center}
 <h2>Guard the money moments</h2>
 <p>Fraud fear blocks even advanced users from payments [Rani TT]. Slow pacing, explicit reversibility, and visible safety cues on every money step [Rani TT].</p>
 
-<h1>Part 5 - Tips: tech constraints <i>(video transcripts pending - see note)</i></h1>
-<p>The three Google talks you sent are the canonical technical brief here: Building for Your Next Billion Users (Google I/O '17, Chrome), Build apps for the next billion users (Google I/O '19, Android), and TechSessions with Amrit Sanjeev (Google for Developers India). Their official briefs cover: new internet users facing "very different constraints to accessing the internet" [I/O '17 description], and i18n plus network speed as the named challenges, with Google SDKs/APIs for NBU markets [I/O '19 description]. Transcripts are still being extracted (see source ledger); this section will be expanded with the talks' specific guidance on low-end devices, intermittent connectivity, data cost and localization once they land. From the other sources, the confirmed constraints are:</p>
+<h1>Part 5 - Tips: tech constraints <i>(Google talks distilled in Part 5B)</i></h1>
+<p>The three Google talks you sent are the canonical technical brief here: Building for Your Next Billion Users (Google I/O '17, Chrome), Build apps for the next billion users (Google I/O '19, Android), and TechSessions with Amrit Sanjeev (Google for Developers India). Their official briefs cover: new internet users facing "very different constraints to accessing the internet" [I/O '17 description], and i18n plus network speed as the named challenges, with Google SDKs/APIs for NBU markets [I/O '19 description]. The full transcripts have since landed and are distilled in Part 5B below (and as Stage VII of the spine, cards 40-49). From the other sources, the confirmed constraints are:</p>
 <ul>
 <li>Low literacy and vernacular-first: voice search and visual navigation are already how novices cope (YouTube voice search was a top-replicated skill) [Rani TT].</li>
 <li>Shared devices: the phone is a household asset and a status symbol, not a personal one - design accounts, privacy and sessions accordingly [Rani TT].</li>
@@ -199,6 +201,58 @@ footer{padding:30px 0 60px;color:var(--dim);font-size:12.5px;text-align:center}
 <li>Digital and financial literacy training is a universal requirement across all cohorts and genders [HQ Social Protection Landscape].</li>
 </ul>
 
+<h1>Part 5B - Google's NBU doctrine: what the full transcripts add</h1>
+<p><i>Added September 25, 2026. The full transcripts of all three talks were pulled from YouTube's caption tracks and distilled. Every timestamp below links to that moment in the source video.</i></p>
+<table>
+<tr><th>Talk</th><th>Speakers / event</th><th>Length</th><th>Link</th></tr>
+<tr><td>Building for Your Next Billion Users</td><td>Oppenheimer, Moeva, Nyman (Chrome) - Google I/O 2017</td><td>43 min</td><td><a href="https://www.youtube.com/watch?v=wD3rpdiLMyY">youtube.com/watch?v=wD3rpdiLMyY</a></td></tr>
+<tr><td>Build apps for the next billion users</td><td>Rezgui, Sanjeev, Kumar (Android) - Google I/O 2019</td><td>31 min</td><td><a href="https://www.youtube.com/watch?v=UPZPpuWNCp8">youtube.com/watch?v=UPZPpuWNCp8</a></td></tr>
+<tr><td>TechSessions - Next Billion Users</td><td>Amrit Sanjeev - Google for Developers India</td><td>36 min</td><td><a href="https://www.youtube.com/watch?v=Pgo4S3xUSZs">youtube.com/watch?v=Pgo4S3xUSZs</a></td></tr>
+</table>
+<p>Talk 1 is doctrine plus the web playbook (PWA/AMP). Talk 2 is the doctrine refresh plus the native Android playbook (Play, SDKs, Android Go). Talk 3 is the India field guide: practitioner-level, behavioural, and the most opinionated of the three. Talks 2 and 3 share a speaker (Amrit Sanjeev), so 3 reads as the uncut version of 2's middle section.</p>
+<h2>The doctrine in one paragraph</h2>
+<p>The next billion are already here, on phones only, mostly prepaid, often offline by choice, on low-RAM devices with full-storage disks, and they expect the <i>same</i> quality of experience as users on flagship phones in San Francisco. They will not grade you on a curve. Every barrier you leave in place (install size, data cost, load time, crash on a flaky network, English-only UI) is paid for in uninstalls and one-star ratings, not in patience. Diversity of language, device, and connectivity is not an edge case to special-case; designing for it makes the product better for everyone. Offline is a normal state, not an exception. Data is money to these users, so your app's real price is the megabytes it consumes.</p>
+<h2>The five principles (Talk 1, the canonical frame)</h2>
+<ol>
+<li><b>Remove barriers before first use.</b> No-install or tiny-install options, small downloads, works offline. Twitter Lite (under 1MB) got 1M+ launches/day and a 20% lower bounce rate within months (<a href="https://www.youtube.com/watch?v=wD3rpdiLMyY&t=608">10:08</a>).</li>
+<li><b>Optimize for speed.</b> "I have yet to hear anybody, anywhere on the planet, complain that something is loading too fast." Google's transcoded pages in Indonesia used 90% less data, loaded 5x faster, and saw 50% more traffic (<a href="https://www.youtube.com/watch?v=wD3rpdiLMyY&t=608">10:08</a>, <a href="https://www.youtube.com/watch?v=wD3rpdiLMyY&t=731">12:11</a>).</li>
+<li><b>Offline is a state of its own, not an exception.</b> People download at train-station Wi-Fi and live offline the rest of the day; Chrome offers "search later" with a notification when back online (<a href="https://www.youtube.com/watch?v=wD3rpdiLMyY&t=731">12:11</a>).</li>
+<li><b>Multilingual by default.</b> Users type Hindi words into English keyboards; side-by-side Hindi/English results lifted Hindi mobile searches 50%. Over 20% of NBU-market users search in two or more languages (<a href="https://www.youtube.com/watch?v=wD3rpdiLMyY&t=855">14:15</a>, <a href="https://www.youtube.com/watch?v=wD3rpdiLMyY&t=2312">38:32</a>).</li>
+<li><b>A different starting context needs a different product, not a ported one.</b> First-time users read Chrome's empty homepage as "a big, vast, empty lobby... very cold and not welcoming"; the fix was a homepage surrounded by their favorite sites and articles (<a href="https://www.youtube.com/watch?v=wD3rpdiLMyY&t=855">14:15</a>, <a href="https://www.youtube.com/watch?v=wD3rpdiLMyY&t=976">16:16</a>).</li>
+</ol>
+<h2>What Talk 2 (Android, I/O '19) adds</h2>
+<ul>
+<li>The definition and the correction: NBU countries are those where half the population is not yet connected - and "it's already big, it's already present." Southeast Asia alone is 350M internet users (<a href="https://www.youtube.com/watch?v=UPZPpuWNCp8&t=0">0:00</a>).</li>
+<li>Behavioural profile: mobile-only mindset (Nigeria: 11% computer access), voice-first instinct (30% of searches in India are voice), constant context-based language switching, demand for content <i>adapted</i> to culture, not just translated (<a href="https://www.youtube.com/watch?v=UPZPpuWNCp8&t=122">2:02</a>).</li>
+<li>The reframes: "diversity at Google is not a problem, it's an asset"; offline as deliberate user choice - 95% prepaid, users turn data off on purpose, so "you're not connected" banners are useless (<a href="https://www.youtube.com/watch?v=UPZPpuWNCp8&t=363">6:03</a>, <a href="https://www.youtube.com/watch?v=UPZPpuWNCp8&t=242">4:02</a>).</li>
+<li>i18n numbers: 23 official Indian languages in 13 scripts; 314M bilingual Indians; Hindi is the world's 4th most spoken language but not in the web's top 30; Nigeria has 500 spoken languages (<a href="https://www.youtube.com/watch?v=UPZPpuWNCp8&t=122">2:02</a>, <a href="https://www.youtube.com/watch?v=UPZPpuWNCp8&t=242">4:02</a>).</li>
+<li>The SDK playbook: App Bundles (RedBus -30% APK size, +6% conversions; PayTM -20% further via on-demand modules), conditional delivery by locale, in-app update API, SMS Retriever/User Consent (Zomato dropped SMS-read permission entirely), Firebase Performance Monitoring (one partner cut 2G cold-start 50%), localized Play listings (Cookbook +17% conversions) (<a href="https://www.youtube.com/watch?v=UPZPpuWNCp8&t=487">8:07</a> through <a href="https://www.youtube.com/watch?v=UPZPpuWNCp8&t=1097">18:17</a>).</li>
+<li>Android Go engineering: Proguard alone saved ~25% disk on system apps; WebP over PNG; avoid enums (1-1.4KB each); the two battery drains are processor and radio (<a href="https://www.youtube.com/watch?v=UPZPpuWNCp8&t=1221">20:21</a> through <a href="https://www.youtube.com/watch?v=UPZPpuWNCp8&t=1713">28:33</a>).</li>
+</ul>
+<h2>What Talk 3 (TechSessions, Amrit Sanjeev) adds - the India field guide</h2>
+<ul>
+<li>Western user research does not transfer: prepaid users watch their balance constantly, and that caution shapes every interaction (<a href="https://www.youtube.com/watch?v=Pgo4S3xUSZs&t=120">2:00</a>, <a href="https://www.youtube.com/watch?v=Pgo4S3xUSZs&t=241">4:01</a>).</li>
+<li>No grading on a curve: "A Flipboard app that doesn't flip" is unacceptable; flaky networks and low RAM "are engineering problems users want us engineers to solve" (<a href="https://www.youtube.com/watch?v=Pgo4S3xUSZs&t=241">4:01</a>, <a href="https://www.youtube.com/watch?v=Pgo4S3xUSZs&t=361">6:01</a>).</li>
+<li>Battery is becoming the #1 uninstall trigger in India; defer heavy work to charger-connected, unmetered moments (<a href="https://www.youtube.com/watch?v=Pgo4S3xUSZs&t=361">6:01</a>, <a href="https://www.youtube.com/watch?v=Pgo4S3xUSZs&t=483">8:03</a>).</li>
+<li>The app's true cost includes the data it consumes; past ~25MB, installs drop drastically (<a href="https://www.youtube.com/watch?v=Pgo4S3xUSZs&t=603">10:03</a>, <a href="https://www.youtube.com/watch?v=Pgo4S3xUSZs&t=1455">24:15</a>).</li>
+<li>Delight the 80%: preload the flow most users take rather than degrading everything for the 20% case (<a href="https://www.youtube.com/watch?v=Pgo4S3xUSZs&t=726">12:06</a>, <a href="https://www.youtube.com/watch?v=Pgo4S3xUSZs&t=847">14:07</a>).</li>
+<li>Error states must be actionable: "check if data is turned off" beats "No network connection" (<a href="https://www.youtube.com/watch?v=Pgo4S3xUSZs&t=1212">20:12</a>).</li>
+<li>Anti-uninstall engineering: one-third of users see the storage-low dialog daily; listen for it and clear your caches (<a href="https://www.youtube.com/watch?v=Pgo4S3xUSZs&t=1212">20:12</a>, <a href="https://www.youtube.com/watch?v=Pgo4S3xUSZs&t=1332">22:12</a>).</li>
+<li>Notification delivery as design: 12h to 18h TTL improved delivery 12-15%; partners reached 75-85% by timing sends to when users are online (<a href="https://www.youtube.com/watch?v=Pgo4S3xUSZs&t=1700">28:20</a>).</li>
+<li>Slow update cycles: 90% of users take 6-8 weeks to reach a new version (<a href="https://www.youtube.com/watch?v=Pgo4S3xUSZs&t=1579">26:19</a>). One-star-on-first-crash rating culture (<a href="https://www.youtube.com/watch?v=Pgo4S3xUSZs&t=1945">32:25</a>).</li>
+<li>Ride local waves: Jio's free data spiked video overnight; festival seasons change spending (<a href="https://www.youtube.com/watch?v=Pgo4S3xUSZs&t=1945">32:25</a>, <a href="https://www.youtube.com/watch?v=Pgo4S3xUSZs&t=2068">34:28</a>).</li>
+</ul>
+<h2>Read-throughs for the agenda: behaviour change, agency, retention</h2>
+<ul>
+<li><b>The doctrine is an access doctrine, and it quietly proves the agency point.</b> Almost every practice removes friction (size, speed, data, language). But the moments Google found emotional, not functional, barriers are exactly agency barriers: the "empty lobby" homepage was fixed by familiarity, not function; multi-language support is framed as culture and identity, not comprehension. Direct evidence that access is not the binding constraint - feeling welcome and capable is.</li>
+<li><b>Prepaid behaviour is exercised agency.</b> Users ration data deliberately; Google's own guidance treats Data Saver and offline states as explicit user intent, not errors. A behaviour-change product for this population must treat the data budget the way a bank treats a balance - the user controls it, you earn spend from it.</li>
+<li><b>Retention is engineered at the uninstall margin.</b> Named churn triggers: storage-low dialogs (1/3 of users daily), battery drain (becoming the #1 uninstall reason in India), first-crash one-star culture, 3-second load abandonment (53%). For the Duolingo-attrition challenge, Google's answer is that churn is mostly operational - the boring engineering is the retention strategy. Open question: what drives churn after hygiene is satisfied.</li>
+<li><b>The homescreen icon is a habit loop with numbers.</b> Flipkart: 60% of visits from the icon, +70% conversion; Add-to-Homescreen accepted 5-6x more than installs. Placement in the user's environment beats re-acquisition.</li>
+<li><b>Notification TTL findings are a direct behaviour lever.</b> 12h to 18h TTL = 12-15% delivery improvement. Delivery windows and message persistence are behaviour-design variables, not plumbing.</li>
+<li><b>"Delight the 80%" is a measurable-behaviour design rule.</b> Instrument actual usage, optimize the dominant path, accept the cache miss. Same logic as the lever ranking: design from observed behaviour, not assumed journeys.</li>
+<li><b>Local waves move behaviour more than features.</b> Jio's free data changed video consumption overnight; festival seasons change spending. Environmental and economic shifts are bigger levers than in-product nudges - worth a place on the lever ranking.</li>
+<li><b>Caveat on vintage.</b> Talks are 2017-2019. Post-Jio India has cheap 4G; the 2G/transcoding emphasis is dated. The durable parts are the behavioural frames (prepaid psychology, offline-by-choice, multilingual identity, no grading on a curve), not the specific network stats.</li>
+</ul>
 <h1>Part 7 - Mapping the evidence onto your Systems of Ascent frame</h1>
 <ul>
 <li><b>Value Stagnation is real and measured:</b> 60% no scheme enrollment, 86% no government loan scheme, savings under 20% of income for most women entrepreneurs [HQ Social Protection Landscape; HQ Women &amp; Finance].</li>
@@ -259,12 +313,12 @@ footer{padding:30px 0 60px;color:var(--dim);font-size:12.5px;text-align:center}
 <li>"Copy of client reference doc.pptx": a Google UXR report template (Channel &amp; SLA UXR India, May 2022) - structure reference only, no primary data.</li>
 </ul>
 <p><b>Haqdarshak impact site (all 15 reports downloaded and read; impact.haqdarshak.com):</b> Annual Impact Report 2023; Social Protection Landscape for Informal Workers in India (KOIS/C3); Citizen Experiences of Social Protection (3,574 surveys, 100+ FGD participants); Women and Finance (DBS Bank India x Haqdarshak); Bringing Women into the Workforce (Ground Report 04); Domestic Workers in India (Ground Reports 06.01-06.04); Agriculture &amp; Sustainability; Supporting Self-help Groups; Accessing Formal Credit; Health Insurance (Ground Report 01); Direct Implementation (HQ Archives); Ration/Food Security (HQ Archives). Three of these (Health Insurance, Direct Implementation, Ration) are image-scan PDFs; their text was OCR-extracted and may be partial.</p>
-<p><b>Videos (transcripts pending):</b> youtube.com/watch?v=wD3rpdiLMyY (Building for Your Next Billion Users, Google I/O '17), youtube.com/watch?v=Pgo4S3xUSZs (TechSessions - Next Billion Users with Amrit Sanjeev), youtube.com/watch?v=UPZPpuWNCp8 (Build apps for the next billion users, Google I/O '19). YouTube rate-limited caption extraction during this run from two separate routes; only the official titles and session descriptions are cited above, clearly marked as descriptions. A retry is scheduled; this doc's Part 5 will be expanded with the talks' specific content once transcripts land.</p>
+<p><b>Google NBU talks (full transcripts pulled and distilled - see Part 5B and spine Stage VII):</b> <a href="https://www.youtube.com/watch?v=wD3rpdiLMyY">Building for Your Next Billion Users</a> (Chrome, Google I/O '17, 43 min); <a href="https://www.youtube.com/watch?v=UPZPpuWNCp8">Build apps for the next billion users</a> (Android, Google I/O '19, 31 min); <a href="https://www.youtube.com/watch?v=Pgo4S3xUSZs">TechSessions - Next Billion Users with Amrit Sanjeev</a> (Google for Developers India, 36 min). Transcripts sourced from each video's YouTube caption track via a caption mirror; timestamps throughout link to the moment.</p>
 
   </div>
 </main>
 
-<footer>Distilled from 15 Haqdarshak reports, Google's Project Rani UX research, 3 Google NBU talks (transcripts pending), and the behavioural-science canon from Bandura to the BIT. Built for scrolling.</footer>
+<footer>Distilled from 15 Haqdarshak reports, Google's Project Rani UX research, 3 Google NBU talks (full transcripts distilled), and the behavioural-science canon from Bandura to the BIT. Built for scrolling.</footer>
 <script>
 const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 const CONCEPTS = [
@@ -574,11 +628,12 @@ const CONCEPTS = [
     "stage_num": 5,
     "stage_range": "22-26",
     "eyebrow": "The Google NBU talks",
-    "title": "The canonical technical brief, still being transcribed",
-    "summary": [
-      "The three talks Naman sent are Google's own NBU doctrine: 'Building for Your Next Billion Users' (Chrome, I/O '17, 43 min), 'Build apps for the next billion users' (Android, I/O '19, 31 min - names i18n and network speed as the headline challenges, plus Google SDKs for NBU markets), and 'TechSessions - Next Billion Users with Amrit Sanjeev' (Google for Developers India, 36 min - emerging-market trends). Full transcripts are pending (YouTube rate-limited every extraction route tonight; a retry is running). Their specific guidance on low-end devices, offline-first design, data cost and localization will be added to the notes layer and the doc when the transcripts land - nothing here is guessed."
-    ],
-    "transition": ""
+    "title": "Google's NBU doctrine: the three talks, now distilled",
+    "transition": "Google's doctrine confirms the spine from the platform side - it starts at card 40.",
+    "summary_html": [
+      "The three talks Naman sent are Google's own NBU doctrine: <a href=\"https://www.youtube.com/watch?v=wD3rpdiLMyY\">Building for Your Next Billion Users</a> (Chrome, I/O '17, 43 min), <a href=\"https://www.youtube.com/watch?v=UPZPpuWNCp8\">Build apps for the next billion users</a> (Android, I/O '19, 31 min), and <a href=\"https://www.youtube.com/watch?v=Pgo4S3xUSZs\">TechSessions - Next Billion Users with Amrit Sanjeev</a> (Google for Developers India, 36 min).",
+      "The full transcripts are now pulled and distilled: their guidance on devices, data cost, offline, localization and retention is folded into this playbook as Stage VII (cards 40-49), with the longer digest in the notes layer (Part 5B)."
+    ]
   },
   {
     "num": 27,
@@ -754,9 +809,139 @@ const CONCEPTS = [
       "The cobra check on yourself: write the one metric your pilot optimizes, then ask how a clever field agent would game it. If you cannot answer in five minutes, you are about to pay bounties for dead cobras."
     ],
     "transition": "Sources: Bandura 1977; Gollwitzer and Sheeran 2006; Thaler and Sunstein 2008; Hallsworth et al. 2017; Fogg (Stanford); Banerjee et al. 2010 (BMJ); Ashraf, Karlan and Yin 2006 (QJE); Dai, Milkman and Riis 2014; Bryan et al. 2011; Kahneman and Tversky 1979; hyperfocus.hq reel (Sept 1, 2026). Full ledger in the notes."
+  },
+  {
+    "num": 40,
+    "stage": "Stage VII - Google's doctrine: what the platform itself proved",
+    "stage_num": 7,
+    "stage_range": "40-49",
+    "eyebrow": "Already here",
+    "title": "The next billion are already here, and nobody grades on a curve",
+    "summary_html": [
+      "Google's own correction to its own framing: \"We usually think about the next billion users as something in the future... It's already big. It's already present\" (Yacine Rezgui, <a href=\"https://www.youtube.com/watch?v=UPZPpuWNCp8\">I/O '19</a>). NBU markets are countries where half the population is not yet online; India alone has been adding tens of millions of new internet users every year (<a href=\"https://www.youtube.com/watch?v=wD3rpdiLMyY&t=122\">Talk 1, 2:02</a>).",
+      "And they expect the full experience on a $150 phone: \"A Flipboard app that doesn't flip\" is unacceptable - flaky networks and low RAM \"are engineering problems users want us engineers to solve\" (Amrit Sanjeev, <a href=\"https://www.youtube.com/watch?v=Pgo4S3xUSZs&t=241\">Talk 3, 4:01</a>). Every barrier left in place - size, data cost, load time, English-only UI - is paid for in uninstalls and one-star ratings, not patience (<a href=\"https://www.youtube.com/watch?v=Pgo4S3xUSZs&t=1945\">Talk 3, 32:25</a>)."
+    ],
+    "transition": "Fixed expectations mean every design variable sits on your side of the table - starting with the device they actually carry."
+  },
+  {
+    "num": 41,
+    "stage": "Stage VII - Google's doctrine: what the platform itself proved",
+    "stage_num": 7,
+    "stage_range": "40-49",
+    "eyebrow": "Device reality",
+    "title": "Storage is a daily negotiation, and your app tops the delete list",
+    "summary_html": [
+      "83% of NBU users delete something every week to free space (<a href=\"https://www.youtube.com/watch?v=wD3rpdiLMyY&t=488\">Talk 1, 8:08</a>), and one-third see the storage-low dialog every single day (<a href=\"https://www.youtube.com/watch?v=Pgo4S3xUSZs&t=1212\">Talk 3, 20:12</a>). Past roughly 25MB, installs drop drastically - Flipkart and Myntra treat app size as a top-line growth lever (<a href=\"https://www.youtube.com/watch?v=Pgo4S3xUSZs&t=603\">Talk 3, 10:03</a>).",
+      "The counter-moves are engineering, not marketing: App Bundles (RedBus cut APK size 30% with zero code changes and gained 6% conversions; PayTM cut a further 20% with on-demand modules), WebP over PNG, Proguard, and listening for the storage-low broadcast so you clear your own caches before the user clears you (<a href=\"https://www.youtube.com/watch?v=UPZPpuWNCp8&t=487\">Talk 2, 8:07</a> onward)."
+    ],
+    "transition": "What survives the purge earns its place in megabytes - and megabytes are money."
+  },
+  {
+    "num": 42,
+    "stage": "Stage VII - Google's doctrine: what the platform itself proved",
+    "stage_num": 7,
+    "stage_range": "40-49",
+    "eyebrow": "Data is money",
+    "title": "Data is a currency the user spends on purpose",
+    "summary_html": [
+      "95% of these users are prepaid; they toggle airplane mode to ration balance. Google's reframe: a \"you're not connected\" banner is useless because \"they are the one who set it off\" (Rezgui, <a href=\"https://www.youtube.com/watch?v=UPZPpuWNCp8&t=363\">Talk 2, 6:03</a>). Data Saver mode is an explicit statement of intent - honor it with the Save-Data client hint (<a href=\"https://www.youtube.com/watch?v=wD3rpdiLMyY&t=2191\">Talk 1, 36:31</a>).",
+      "\"Do you think that's the cost of the app? Not really\" - the data your app consumes is part of its price (Sanjeev, <a href=\"https://www.youtube.com/watch?v=Pgo4S3xUSZs&t=603\">Talk 3, 10:03</a>). Treat the user's data budget the way a bank treats a balance: they control it, and you earn spend from it. That is agency respect encoded in an API."
+    ],
+    "transition": "And the state they choose most often is the one most products treat as an error."
+  },
+  {
+    "num": 43,
+    "stage": "Stage VII - Google's doctrine: what the platform itself proved",
+    "stage_num": 7,
+    "stage_range": "40-49",
+    "eyebrow": "Offline by choice",
+    "title": "Offline is a normal state, not an exception",
+    "summary_html": [
+      "People download at train-station Wi-Fi and live offline the rest of the day, so Chrome offers \"search later\" with a notification when connectivity returns (Moeva, <a href=\"https://www.youtube.com/watch?v=wD3rpdiLMyY&t=731\">Talk 1, 12:11</a>). Show stale data with an honest \"this is older data\" label, never crash on airplane mode, and shrink payloads to the network: 10 items on 2G, 100 on 4G.",
+      "Error states must carry the next move: \"No network connection\" dead-ends a first-time user; \"check if data is turned off\" preserves their agency (<a href=\"https://www.youtube.com/watch?v=Pgo4S3xUSZs&t=1212\">Talk 3, 20:12</a>). Even notifications respect the pattern: extending TTL from 12 to 18 hours lifted delivery 12-15%, and sending at the hours users are actually online reached 75-85% delivery (<a href=\"https://www.youtube.com/watch?v=Pgo4S3xUSZs&t=1700\">Talk 3, 28:20</a>)."
+    ],
+    "transition": "Designing for the connection they have is half the respect. The other half is the language they think in."
+  },
+  {
+    "num": 44,
+    "stage": "Stage VII - Google's doctrine: what the platform itself proved",
+    "stage_num": 7,
+    "stage_range": "40-49",
+    "eyebrow": "Multilingual by default",
+    "title": "Language is identity, and users switch it mid-thought",
+    "summary_html": [
+      "India has 23 official languages in 13 scripts and 314M bilingual people; over 20% of NBU-market users search in two or more languages, and 30% of Google searches in India are already voice (<a href=\"https://www.youtube.com/watch?v=UPZPpuWNCp8&t=122\">Talk 2, 2:02</a>). Hindi is the world's fourth most spoken language yet sits outside the web's top 30 - an opportunity gap, not an edge case.",
+      "Design for switching, not a single locale: side-by-side Hindi/English results lifted Hindi mobile searches 50% (<a href=\"https://www.youtube.com/watch?v=wD3rpdiLMyY&t=2312\">Talk 1, 38:32</a>); localized Play store listings lifted conversions 17% (<a href=\"https://www.youtube.com/watch?v=UPZPpuWNCp8&t=1097\">Talk 2</a>); app-bundle language splits ship each user only their own language. \"It's part of their culture, you cannot deny that\" - localization is respect, not comprehension (<a href=\"https://www.youtube.com/watch?v=UPZPpuWNCp8&t=242\">Talk 2, 4:02</a>)."
+    ],
+    "transition": "Get the first screen wrong, though, and none of the rest is ever seen."
+  },
+  {
+    "num": 45,
+    "stage": "Stage VII - Google's doctrine: what the platform itself proved",
+    "stage_num": 7,
+    "stage_range": "40-49",
+    "eyebrow": "The empty lobby",
+    "title": "A blank first screen reads as cold, not clean",
+    "summary_html": [
+      "First-time users told Google that Chrome's empty homepage \"reminded them of a big, vast, empty lobby where you have to walk all the way and then ask a receptionist something. It felt very cold and not welcoming\" (Moeva, <a href=\"https://www.youtube.com/watch?v=wD3rpdiLMyY&t=976\">Talk 1, 16:16</a>). The fix was not a tutorial - it was surrounding them with their own favorite sites and articles. Principle 5: a different starting context needs a different product, not a ported one (<a href=\"https://www.youtube.com/watch?v=wD3rpdiLMyY&t=855\">Talk 1, 14:15</a>).",
+      "This is the agency thesis in Google's own data: the barrier was emotional, not functional, and familiarity - their things, their language, their people - supplied the permission to begin. Access was already solved. Welcome was not."
+    ],
+    "transition": "Familiarity gets them through the door. What keeps them is more mechanical than anyone admits."
+  },
+  {
+    "num": 46,
+    "stage": "Stage VII - Google's doctrine: what the platform itself proved",
+    "stage_num": 7,
+    "stage_range": "40-49",
+    "eyebrow": "Retention is operational",
+    "title": "Churn is mostly boring: speed, storage, battery",
+    "summary_html": [
+      "53% of users abandon loads over 3 seconds; battery is becoming the #1 uninstall trigger in India, largely caused by apps; users are \"very highly likely to give one star on the first crash\" (<a href=\"https://www.youtube.com/watch?v=Pgo4S3xUSZs&t=361\">Talk 3, 6:01</a>, <a href=\"https://www.youtube.com/watch?v=Pgo4S3xUSZs&t=1945\">32:25</a>). Google's transcoded pages in Indonesia used 90% less data, loaded 5x faster, and saw 50% more traffic (<a href=\"https://www.youtube.com/watch?v=wD3rpdiLMyY&t=731\">Talk 1, 12:11</a>).",
+      "For the Duolingo-attrition worry - 80% churn even in best-in-class edtech - Google's answer is unglamorous: the boring engineering is the retention strategy. Defer heavy work to charging, unmetered moments; batch network jobs so the OS batches radio wake-ups. The open research question is what drives churn after the hygiene factors are satisfied."
+    ],
+    "transition": "Once the hygiene holds, growth comes from where the product lives - not what it says."
+  },
+  {
+    "num": 47,
+    "stage": "Stage VII - Google's doctrine: what the platform itself proved",
+    "stage_num": 7,
+    "stage_range": "40-49",
+    "eyebrow": "Homescreen habit",
+    "title": "A chosen place on the homescreen beats any re-acquisition",
+    "summary_html": [
+      "Add-to-Homescreen converts 5-6x better than a native install; Flipkart gets 60% of visits from the homescreen icon, and those users convert 70% higher (<a href=\"https://www.youtube.com/watch?v=wD3rpdiLMyY&t=2434\">Talk 1, 40:34</a>). Ola's PWA is 0.5MB against 60-100MB native, with users visiting twice as many pages and spending twice the time (<a href=\"https://www.youtube.com/watch?v=wD3rpdiLMyY&t=1583\">Talk 1, 26:23</a>); Konga cut data to first transaction 84% with service workers (<a href=\"https://www.youtube.com/watch?v=wD3rpdiLMyY&t=2312\">Talk 1, 38:32</a>).",
+      "Placement in the user's environment - a persistent surface they chose - is a habit loop with numbers attached. Design where a tool lives in someone's day, not only how it persuades in the moment."
+    ],
+    "transition": "And the largest levers of all sit outside the product entirely."
+  },
+  {
+    "num": 48,
+    "stage": "Stage VII - Google's doctrine: what the platform itself proved",
+    "stage_num": 7,
+    "stage_range": "40-49",
+    "eyebrow": "Local waves",
+    "title": "Environmental shifts move behaviour more than any feature",
+    "summary_html": [
+      "When Jio made data effectively free, video consumption spiked overnight; festival seasons change spending patterns (<a href=\"https://www.youtube.com/watch?v=Pgo4S3xUSZs&t=1945\">Talk 3, 32:25</a>, <a href=\"https://www.youtube.com/watch?v=Pgo4S3xUSZs&t=2068\">34:28</a>). And 90% of users take 6-8 weeks to reach a new app version, so testing must carry the weight a hotfix culture assumes away (<a href=\"https://www.youtube.com/watch?v=Pgo4S3xUSZs&t=1579\">Talk 3, 26:19</a>).",
+      "For field research, the lesson is sequencing: watch the economic weather - data prices, festival calendars, subsidy waves - before crediting any in-product nudge. Environmental levers belong on the behaviour-lever ranking, near the top."
+    ],
+    "transition": "Everything above converges on one working rule for whatever gets built next."
+  },
+  {
+    "num": 49,
+    "stage": "Stage VII - Google's doctrine: what the platform itself proved",
+    "stage_num": 7,
+    "stage_range": "40-49",
+    "eyebrow": "Delight the 80%",
+    "title": "Instrument the dominant path, then delight the 80%",
+    "summary_html": [
+      "\"Do you want to get a degraded performance for 100% of users, or do you want to delight 80% of them?\" (Sanjeev, <a href=\"https://www.youtube.com/watch?v=Pgo4S3xUSZs&t=847\">Talk 3, 14:07</a>). Instrument actual usage, preload the flow most users take, and accept the cache miss on the edge case - the same logic as the lever layer: design from observed behaviour, not assumed journeys.",
+      "And the compounding rule that closes the doctrine: \"All these small inches add to the mile. One of them is not going to make 50% improvement in your downloads, but all these small things do make a difference\" (<a href=\"https://www.youtube.com/watch?v=Pgo4S3xUSZs&t=2068\">Talk 3, 34:28</a>)."
+    ],
+    "transition": ""
   }
 ];
-const STAGE_COLORS = {1:'var(--s1)',2:'var(--s2)',3:'var(--s3)',4:'var(--s4)',5:'var(--s5)'};
+const STAGE_COLORS = {1:'var(--s1)',2:'var(--s2)',3:'var(--s3)',4:'var(--s4)',5:'var(--s5)',6:'var(--s6)',7:'var(--s7)'};
 const feed = document.getElementById('feed');
 let lastStage = null;
 CONCEPTS.forEach(c => {
@@ -772,10 +957,10 @@ CONCEPTS.forEach(c => {
   }
   const card = document.createElement('article');
   card.className = 'card';
-  const sum = c.summary.map(esc).join('<br><br>');
+  const sum = c.summary_html ? c.summary_html.join('<br><br>') : c.summary.map(esc).join('<br><br>');
   const trans = c.transition
     ? `<div class="transition"><b>Why this forces the next step</b>${esc(c.transition.replace(/^Transition:?\s*/i,''))}</div>`
-    : `<div class="final"><b style="color:var(--s5);display:block;font-size:11px;text-transform:uppercase;letter-spacing:1.2px;margin-bottom:5px">End of the spine</b>The playbook is complete: agency, teaching, reach, trust, and the real world.</div>`;
+    : `<div class="final"><b style="color:var(--s5);display:block;font-size:11px;text-transform:uppercase;letter-spacing:1.2px;margin-bottom:5px">End of the spine</b>The playbook is complete: agency, teaching, reach, trust, the real world, behaviour levers, and the platform's own doctrine.</div>`;
   card.innerHTML = `
     <div class="cmeta"><span class="cnum" style="background:${STAGE_COLORS[sn]}">${c.num}</span><span class="ctag">${esc(c.stage.split(' - ')[0])}</span></div>
     <div class="eyebrow">${esc(c.eyebrow)}</div>
@@ -786,7 +971,7 @@ CONCEPTS.forEach(c => {
   card.addEventListener('click', e => { card.classList.toggle('open'); });
   feed.appendChild(card);
 });
-document.getElementById('recap').innerHTML = `<h2>The arc in one line</h2><p>Access is solved, so build for agency, not access. Agency comes from a human, so replace or assist the tech teacher. Humans teach visually, so show clicks and landmarks that match their real screens. Belief comes from small free wins, so earn trust before you ask for anything. And money is the most-wanted, most-feared feature, so guard it - then segment by mindset, build the first compoundable asset, and distribute through camps, widgets, agents and SHGs.</p>`;
+document.getElementById('recap').innerHTML = `<h2>The arc in one line</h2><p>Access is solved, so build for agency, not access. Agency comes from a human, so replace or assist the tech teacher. Humans teach visually, so show clicks and landmarks that match their real screens. Belief comes from small free wins, so earn trust before you ask for anything. And money is the most-wanted, most-feared feature, so guard it - then segment by mindset, build the first compoundable asset, and distribute through camps, widgets, agents and SHGs. Google's own doctrine agrees from the platform side: they are already here, data is money, offline is normal, the first screen must feel familiar, and retention is operational hygiene before it is persuasion.</p>`;
 
 function showView(v){
   const s = v==='spine';
